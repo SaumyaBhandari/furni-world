@@ -211,7 +211,7 @@
 
 
 .add-to-cart-overlay {
-    background: rgba(255, 255, 255, 0); /* Black see-through */
+    background: rgba(0, 0, 0, 0); /* Black see-through */
     color: #f1f1f1;
     transition-duration: .5s;
     color: white;
@@ -244,11 +244,12 @@
 .add-to-cart-overlay ul li i{
     color: rgb(41, 41, 41);
     transition-duration: .2s;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .add-to-cart-overlay ul li i:hover{
     transform: scale(1.4);
+    color: rgb(255, 149, 78);
 }
 
 
@@ -346,13 +347,13 @@
 #collectionsSection .images .imageCoverLeft{
     flex: 50%;
     margin: 0% 2% 0% 0%;
-    height: 500px;
+    height: 600px;
 }
 
 #collectionsSection .images .imageCoverRight{
     width: 50%;
     margin: 0% 0% 0% 2%;
-    height: 500px;
+    height: 600px;
 }
 
 #collectionsSection .images .imageCoverLeft .image{
@@ -512,7 +513,7 @@
     background-size: 100%;
     /* background-attachment: fixed; */
     background-position:bottom;
-    border: 1px solid #5f5f5f7e;
+    /* border: 1px solid #5f5f5f7e; */
 }
 
 #special-section .image .imageOverlay{
@@ -583,7 +584,7 @@
 #products-cards-section .cardDescription img{
     background-image: #fff;
     padding: 0%;
-    height: 200px;
+    height: 300px;
 }
 
 .cardDescription img{
@@ -653,6 +654,17 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    opacity: 1;
+}
+
+
+
+.furnitureSets-cardDescription{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
 }
 
 #furnitureSetsCards img{
@@ -660,7 +672,8 @@
     height: 500px;
     width: 200%;
     align-self: center;
-    padding-left: 4% ;
+    padding: 4% ;
+    box-shadow: 4px  4px  4px 4px  #0000008e;
 }
 
 
@@ -669,6 +682,7 @@
 .furnitureSets-name{
     text-align: center;
     align-self: center;
+    transform: scale(-1, 1)
 }
 
 .furnitureSets-cardDescription:hover .furnitureSets-name{
@@ -683,11 +697,13 @@
 
 #furnitureSetsCards .slick-slide{
     filter: grayscale(.7);
+    transform: scale(.5);
     transition-duration: .2s;
 }
 
 #furnitureSetsCards .slick-center {
     filter: grayscale(0);
+    transform: scale(-.8, 1);
 }
 
 

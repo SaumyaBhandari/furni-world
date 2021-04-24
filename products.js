@@ -8,17 +8,15 @@ const products = [
 const categories = [
     {id: 1, name: 'Sofas', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/Landing Section/sofa-3.png"},
     {id: 2, name: 'Lighting', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/tablelamp.jpg"},
-    {id: 3, name: 'Seating', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/seating.jpg"},
     {id: 4, name: 'Stool', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/stool.jpg"},
     {id: 5, name: 'Office', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/office.jpg"},
     {id: 6, name: 'Bathroom', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/bath.jpg"},
     {id: 7, name: 'Aesthetic', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/aesthetic.jpg"},
-    {id: 8, name: 'Chair', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/Landing Section/chair.png"},
+    {id: 3, name: 'Seating', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',  image: "images/categories/seating.jpg"},
 ];
 
 const sets = [
-    {id:1, name: 'King Bedroom', price: '$3452.33', image: 'images/sets/bedroom.jpg'},
-    {id:2, name: 'Luxury Living Room', price: '$2442.53', image: 'images/sets/sofa set.jpg'},
+    // {id:1, name: 'King Bedroom', price: '$3452.33', image: 'images/sets/bedroom.jpg'},
     {id:3, name: 'Smart Bathroom', price: '$2172.61', image: 'images/sets/bathroom.jpg'},
     {id:4, name: 'Living in the Room', price: '$2172.61', image: 'images/sets/living.jpg'},
     {id:5, name: 'Lounge Attraction', price: '$2172.61', image: 'images/sets/3360_SL CR.jpg'},
