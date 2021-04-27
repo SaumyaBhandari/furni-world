@@ -16,11 +16,12 @@ const categories = [
 ];
 
 const sets = [
-    // {id:1, name: 'King Bedroom', price: '$3452.33', image: 'images/sets/bedroom.jpg'},
-    {id:3, name: 'Smart Bathroom', price: '$2172.61', image: 'images/sets/bathroom.jpg'},
+    // {id:1, name: 'Living Home', price: '$3452.33', image: 'images/sets/aesthetucc.jpg'},
+    {id:2, name: 'Living Room', price: '$3452.33', image: 'images/sets/livingroom.jpg'},
+    // {id:3, name: 'Smart Bathroom', price: '$2172.61', image: 'images/sets/bathroom.jpg'},
     {id:4, name: 'Living in the Room', price: '$2172.61', image: 'images/sets/living.jpg'},
     {id:5, name: 'Lounge Attraction', price: '$2172.61', image: 'images/sets/3360_SL CR.jpg'},
-    {id:5, name: 'Luxury Dreams', price: '$2172.61', image: 'images/sets/bedroom2.jpg'},
+    {id:6, name: 'Luxury Dreams', price: '$2172.61', image: 'images/sets/bedroom2.jpg'},
 ]
 
 
@@ -29,7 +30,7 @@ const allProducts = [
     {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"},
     {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-3.jpg"},
     {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-4.jpg"},
-    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.jpg"},
+    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.png"},
     {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-6.jpg"},
     {id: 7, name: 'Furniture 7', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-7.jpg"},
     {id: 8, name: 'Furniture 8', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-8.jpg"},
@@ -37,12 +38,11 @@ const allProducts = [
     {id: 10, name: 'Furniture 10', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-10.png"},
     {id: 11, name: 'Furniture 11', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-11.jpg"},
     {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-12.jpg"},
-    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.jpg"},
-    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.jpg"},
-    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.jpg"},
+    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.png"},
+    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.png"},
+    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.png"},
     {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-16.jpg"},
     {id: 17, name: 'Furniture 17', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-17.jpg"},
-    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-18.jpg"},
 ]
 
 
@@ -51,7 +51,33 @@ const allProducts = [
 
 
 
+function landingSlider(){
 
+    var elem = document.getElementById("landing-slider");
+
+    for(i=1; i<products.length; i++){
+        if(i == 2){
+            continue;
+        }
+        
+        var items = document.createElement('div');
+        items.className = 'landing-sliderItems';
+
+        items.innerHTML =   `   
+                                <img src="${products[i].image}" alt="${products[i].name}" style="width:100%">
+                                
+                                <br>
+                                <h3>${products[i].name}</h3>
+                                <p>${products[i].description}</p>
+                            `
+        
+
+            elem.appendChild(items);
+        }
+
+        slickSliderLandingSlider()
+
+}
 
 
 
@@ -98,8 +124,6 @@ function featuredProducts(){
 function topCategories(){
 
     var elem = document.getElementById("categoryCards");
-    console.log(categories)
-
     for(i=0; i<categories.length; i++){
 
         var card = document.createElement('div');
@@ -157,23 +181,89 @@ function miniShop(){
 function furnitureSets(){
 
     var elem = document.getElementById("furnitureSetsCards");
-    console.log(categories)
 
     for(i=0; i<sets.length; i++){
 
         var card = document.createElement('div');
         card.className = "furnitureSets-cardDescription"
+        
 
         card.innerHTML =  `
                             <img src="${sets[i].image}" alt="${sets[i].name}">
                             <br>
                             <h5 class="furnitureSets-name">${sets[i].name}</h5>
+                            <p class="furnitureSets-click">Click to view the set.</p>
                         `   
+ 
+
+
+
         elem.appendChild(card);
     }
 
     slickSliderFurnitureSets()
 }
+
+
+function specialProducts(){
+
+    var elem = document.getElementById("special-right");
+
+    for(i=0; i<4; i++){
+
+        var a = Math.floor((Math.random() * allProducts.length) + 1);
+
+
+        var card = document.createElement('div');
+        card.className = "special-right-cardDescription"
+        
+        var cardesc = document.createElement('div')
+        cardesc.className = "special-right-cardDescription"
+
+        card.innerHTML =  `
+
+                    <img src="${allProducts[a].image}" alt="casting-couch">
+                    <div class="add-to-cart-overlay">
+                                <ul>
+                                <li><i class="gg-bookmark"></i></li>
+                                <li><i class="gg-shopping-cart"></i></li>
+                                    <li><i class="gg-search"></i></li>
+                                </ul>
+                            </div>`
+
+        cardesc.innerHTML = `
+                                <div class="special-image-desc">
+                                        <h5>${allProducts[a].name}</h5>
+                                        <p>${allProducts[a].price}</p>
+                                </div>
+                                `
+
+        card.appendChild(cardesc)
+        elem.appendChild(card);
+
+    }
+
+}
+
+
+
+function slickSliderLandingSlider(){
+
+    $('#landing-slider').slick({
+        arrows: true,
+        infinite: true,
+        speed: 1000,
+        dota: true,
+        centerMode: true,
+        centerPadding: '0%',
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+      });
+
+}
+
 
 
 
@@ -223,20 +313,23 @@ function slickSliderFurnitureSets(){
     $('#furnitureSetsCards').slick({
         arrows: true,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         centerMode: true,
-        centerPadding: '-15%',
+        centerPadding: '0%',
         slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 5000,
         slidesToScroll: 1,
+        focusOnSelect: true
       });
 }
 
 
 
 
+landingSlider()
 featuredProducts()
 topCategories()
 miniShop()
 furnitureSets()
+specialProducts()
