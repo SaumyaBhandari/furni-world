@@ -1,18 +1,26 @@
+
+
 *{
     margin: 0;
     padding: 5;
     box-sizing: border-box;
+    z-index: inherit;
 }
 
 
 #header{
     position: sticky;
+    top: 0%;
+    z-index: 10;
     width: 100%;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     color: #424141;
     height: 64px;
+    background-color: #fff;
+    /* border-bottom: 1px solid #999; */
+    box-shadow: 2px 2px 2px 2px rgba(207, 207, 207, 0.281);
 }
 
 #title{
@@ -28,7 +36,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+section{
+    margin: 0% 0% 4% 0%;
+}
 
 #nav nav ul li{
     float: left;
@@ -42,6 +52,9 @@
     text-transform: uppercase;
     cursor: pointer;
     transition-duration: 1s;
+}
+#nav nav ul li a{
+    color: #424141;
 }
 
 #nav nav ul li:hover{
@@ -57,23 +70,48 @@
 }
 
 
-#header-features ul i{
-    margin: 1% 3%;
+#header-features ul{
+    margin: 1% 0%;
     float: right;
     align-items: center;
-    transform: scale(1.2);
+    transform: scale(.7);
     color: #424141;
+    display: flex;
+}
+
+#header-features ul img{ 
+    margin: 1% 6%;
 }
 
 
-#header-features ul i .number{
+
+#header-features ul .number{
     background-color: #db3737;
     border-radius: 50%;
     color: #fff;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    transform: translate(10px, -10px);
+    transform: translate(-8%, -1%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -84,7 +122,7 @@
     background-color: rgb(208, 232, 228);
     height: 100%;
     width: 100%;
-    padding: 10%;
+    padding: 4%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -103,7 +141,6 @@
     display: flex;
     color: #2e2e2e;
 }
-
 
 
 .oval{
@@ -178,7 +215,7 @@
     height: 100%;
     width: 100%;
     padding: 4%;
-    display: inline;
+    display: inline-block;
     align-items: center;
 }
 
@@ -203,16 +240,13 @@
     height: fit-content;
 }
 
-.cardDescription img{
+.cardDescription .featuredProduct-image{
     background-color: rgb(223, 223, 223);
     padding: 8%;
     transition-duration: .2s;
 }
 
-.cardDescription img:hover{
-    /* transform: scale(1.1); */
-    transition-duration: .2s;
-}
+
 
 
 
@@ -238,23 +272,22 @@
     justify-content: center;
     width: 100%;
     align-items: center;
-    transform: scale(1.3);
     padding: 5%;
 }
 
 .add-to-cart-overlay ul li{
-    margin: 1% 16%;
+    margin: 1% 12%;
     display: inline-block;
 }
 
-.add-to-cart-overlay ul li i{
+.add-to-cart-overlay ul li img{
     color: rgb(41, 41, 41);
     transition-duration: .2s;
-    /* transform: scale(1.1); */
+    transform: scale(.6);
 }
 
-.add-to-cart-overlay ul li i:hover{
-    transform: scale(1.4);
+.add-to-cart-overlay ul li img:hover{
+    transform: scale(.8);
 }
 
 
@@ -289,7 +322,6 @@
     background-color: #000;
     transition-duration: .2s;
 }
-
 
 
 
@@ -343,18 +375,21 @@
 #collectionsSection .images{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 
 #collectionsSection .images .imageCoverLeft{
     /* flex: 50%; */
-    flex-basis: 45%;
+    flex-basis: 48%;
     height: 600px;
+    margin: 0% 1%;
 }
 
 #collectionsSection .images .imageCoverRight{
-    flex-basis: 45%;
-    margin: 0% 0% 0% 2%;
+    flex-basis: 48%;
+    margin: 0% 1%;
+    /* margin: 0% 0% 0% 2%; */
     height: 600px;
 }
 
@@ -562,7 +597,7 @@
     transition-duration: .5s;
 }
 
-#special-right .special-right-cardDescription img{
+#special-right .special-right-cardDescription .special-image{
     height: 260px;
     width: 100%;
     /* box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.534); */
@@ -572,7 +607,7 @@
 
 
 
-.special-left-wrapper img{
+.special-left-wrapper .special-left-image{
     width: 100%;
     height: 620px; 
     object-fit: cover;
@@ -582,15 +617,7 @@
 .special-left-wrapper .add-to-cart-overlay{
     margin-top: -8%;
 }
-.special-left-wrapper .add-to-cart-overlay .gg-bookmark, .gg-shopping-cart, .gg-search{
-    color: #fff;
-}
-.special-left-wrapper .add-to-cart-overlay .gg-shopping-cart{
-    color: #fff;
-}
-.special-left-wrapper .add-to-cart-overlay .gg-search{
-    color: #fff;
-}
+
 
 .special-left-wrapper:hover .add-to-cart-overlay{
     opacity: 1;
@@ -662,15 +689,17 @@
     flex-basis: 24%;
 }
 
-#products-cards-section .cardDescription img{
+#products-cards-section .cardDescription .minishop-image{
     background-image: #fff;
     padding: 0%;
     height: 300px;
 }
 
-.cardDescription img{
+.cardDescription .minishop-image{
     transition-duration: .2s;
 }
+
+
 
 #open-shop-button-new-products{
     text-align: center;
@@ -756,7 +785,7 @@
 #furnitureSetsCards img{
     background-color: rgb(255, 255, 255);
     height: 500px;
-    width: 180%;
+    width: 190%;
     align-self: center;
     padding: 4% ;
     box-shadow: 5px 10px 8px 10px #1b1b1bad;
@@ -829,15 +858,91 @@
 
 
 
+
+
+
+
+#shop-by-preference{
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    width: 100%;
+    padding: 4%;
+    align-items: center;
+    text-align: center;
+}
+
+#preferences{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#preferences .imageCover{
+    height: 600px;
+    margin: 0% .8%;
+    flex-basis: 23%;
+}
+
+#preferences .imageCover .imageOverlay{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100% 2% 0% 2%;
+    transition-duration: .2s;
+}
+
+#preferences .imageCover .imageOverlay:hover{
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.575);
+    transform: scale(1.1);
+}
+
+#preferences .imageCover .imageOverlay p, #preferences .imageCover .imageOverlay h6{
+    opacity: 0;
+    transition-duration: .2s;
+}
+
+#preferences .imageCover .imageOverlay:hover p, #preferences .imageCover .imageOverlay:hover h6{
+    opacity: 1;
+}
+
+
+#preference-open-button p {
+    width: fit-content;
+    padding: .5% 1%;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+#preference-open-button p:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
 #footer-section{
     background-color: rgb(20, 20, 20);
-    height: 95%;
+    height: 100%;
     width: 100%;
     padding: 1% 4%;
     display: inline-block;
     align-items: center;
     text-align: center;
-    
+    margin-top: 8%;
     padding: 2%;
     color: rgb(165, 165, 165);
 }
@@ -924,3 +1029,6 @@ transition: all 250ms ease-in-out 0s;
 
 }
 
+.widget-content, .widget-title{
+    text-align: left;
+}
