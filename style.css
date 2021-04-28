@@ -82,11 +82,11 @@
 
 #landing-section{
     background-color: rgb(208, 232, 228);
-    position: absolute;
     height: 100%;
     width: 100%;
     padding: 10%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -178,8 +178,6 @@
     height: 100%;
     width: 100%;
     padding: 4%;
-    position: absolute;
-    top: 100%;
     display: inline;
     align-items: center;
 }
@@ -263,7 +261,7 @@
 
 .cardDescription div{
     text-align: center;
-    padding: 8%;
+    padding: 2% 8%;
     transform: translate(0, -50%);
 }
 
@@ -314,8 +312,6 @@
     height: 100%;
     width: 100%;
     padding: 4%;
-    position: absolute;
-    top: 200%;
     display: inline-block;
     align-items: center;
     text-align: center;
@@ -345,20 +341,19 @@
 }
 
 #collectionsSection .images{
-    width: 100%;
-    padding: 1%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 #collectionsSection .images .imageCoverLeft{
-    flex: 50%;
-    margin: 0% 2% 0% 0%;
+    /* flex: 50%; */
+    flex-basis: 45%;
     height: 600px;
 }
 
 #collectionsSection .images .imageCoverRight{
-    width: 50%;
+    flex-basis: 45%;
     margin: 0% 0% 0% 2%;
     height: 600px;
 }
@@ -438,8 +433,6 @@
     height: 100%;
     width: 100%;
     padding: 4%;
-    position: absolute;
-    top: 300%;
     display: inline-block;
     align-items: center;
     text-align: center;
@@ -502,8 +495,6 @@
     height: 100%;
     width: 100%;
     padding: 4%;
-    position: absolute;
-    top: 370%;
     color: #424141;
     display: inline-block;
     align-items: center;
@@ -584,6 +575,7 @@
 .special-left-wrapper img{
     width: 100%;
     height: 620px; 
+    object-fit: cover;
     /* box-shadow: 2px 2px 2px 2px rgba(136, 136, 136, 0.294); */
 }
 
@@ -652,8 +644,6 @@
     height: max-content;
     width: 100%;
     padding: 4%;
-    position: absolute;
-    top: 610%;
     align-items: center;
     text-align: center;
 }
@@ -722,13 +712,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     padding: 4%;
     background-color: #0000002d;
     background-blend-mode: multiply;
-    position: absolute;
-    top: 500%;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -846,8 +834,6 @@
     height: 95%;
     width: 100%;
     padding: 1% 4%;
-    position: absolute;
-    top: 756%;
     display: inline-block;
     align-items: center;
     text-align: center;
