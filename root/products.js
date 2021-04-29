@@ -45,6 +45,8 @@ const products = [
     {id: 34, name: 'Furniture 34', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/table2.jpg"},
 ]
 
+const seating = [18, nk]
+
 
 
 
@@ -69,8 +71,7 @@ function shop(e){
 
 
     
-    var elem = document.getElementById("products-display-products1");
-    elem.innerHTML = '';
+    
 
     var el = document.getElementById('pagecount-shop');
     el.innerHTML = '';
@@ -91,6 +92,17 @@ function shop(e){
     }
 
 
+
+    addToShop(start, end)
+
+
+
+}
+
+function addToShop(start, end){
+
+    var elem = document.getElementById("products-display-products1");
+    elem.innerHTML = '';
 
     for(i=start; i<end; i++){
         
@@ -122,8 +134,6 @@ function shop(e){
         card.appendChild(cardesc)
         elem.appendChild(card)   
     }
-
-
 
 }
 
