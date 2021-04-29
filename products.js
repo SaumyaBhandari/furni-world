@@ -91,11 +91,11 @@ function shop(e, tag, start, end){
  
     if(e==2){
         start  = 22;
-        document.getElementById('next-shop1').style.border = '6px solid #000'
+        document.getElementById('next-shop1').style.border = '3px solid #000'
         document.getElementById('previous-shop1').style.border = '1px solid #000'
         end = products.length
     } else{
-        document.getElementById('previous-shop1').style.border = '6px solid #000'
+        document.getElementById('previous-shop1').style.border = '3px solid #000'
         document.getElementById('next-shop1').style.border = '1px solid #000'
     }
 
