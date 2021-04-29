@@ -304,7 +304,7 @@ section{
     flex-basis: 22%;
     margin: 1%;
     /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.144); */
-    height: 400px;
+    height: 380px;
     background-color: #f3f0f0;
 }
 
@@ -374,18 +374,20 @@ section{
 }
 
 .quick-shop-button{
-    color: rgb(5, 5, 5);
-    border: 1px solid #000;
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+    border: 1px solid rgb(19, 19, 19);
     width: 100%;
     padding: 4% 4%;
     opacity: 0;
     transition-duration: .2s;
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
 }
 
 .quick-shop-button:hover{
-    color: rgb(255, 255, 255);
-    background-color: #000;
-    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397);
+    color: smokewhite;
 }
 
 
@@ -497,7 +499,9 @@ section{
     margin: 1%;
 }
 
-
+.recommended-cardDescription .quick-shop-button{
+    transform: scale(.8, .8);
+}
 
 
 
@@ -514,16 +518,17 @@ section{
 
 #breadcrumb-section-shop{
     text-align: center;
-    background-image: linear-gradient(rgba(80, 80, 80, 0.493), #000) ,url("images/further images/4.jpg");
+    /* background-image: linear-gradient(rgba(80, 80, 80, 0.493), #000) ,url("images/further images/4.jpg"); */
+    background-color: #a0a0a086;
     padding: 4%;
     background-position: bottom;
     background-attachment: fixed;
     margin: 0% 0% -1% 0%;
-    color: #fff;
+    color: rgb(19, 19, 19);
 }
 
 #breadcrumb-section-shop a{
-    color: #fff;
+    color: rgb(24, 24, 24);
 }
 
 #breadcrumb-section-shop a:hover{
@@ -547,9 +552,9 @@ section{
 
 #newsletter-section{
     text-align: center;
-    background-color: #0e0e0e;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.767), #000) ,url("images/further images/4.jpg");
     padding: 8%;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     margin: 0% 0% -8% 0%;
     color: #fff;
