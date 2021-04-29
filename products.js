@@ -13,14 +13,14 @@ categories[0] = {id: `0`, title: `${categoreyNames[0]}`, inventory: `${inventTot
 
 
 const products = [
-    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-1.jpg"       , tags: "all, sofa, singleseater, seating"         },
-    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"       , tags: "all, sofa, singleseater, seating"         },
+    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-1.jpg"       , tags: "all, sofas, singleseater, seating"         },
+    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"       , tags: "all, sofas, singleseater, seating"         },
     {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-4.jpg"       , tags: "all, table, wood"         },
-    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.png"       , tags: "all, sofa, doubleseater"         },
+    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.png"       , tags: "all, sofas, doubleseater"         },
     {id: 10, name: 'Furniture 10', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-10.png"    , tags: "all, chair, seating, singleseater"         },
-    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.png"    , tags: "all, sofa, seating, doubleseater"         },
-    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.png"    , tags: "all, sofa, doubleseater, seating"         },
-    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.png"    , tags: "all, sofa, doubleseater, seating"         },
+    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.png"    , tags: "all, sofas, seating, doubleseater"         },
+    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.png"    , tags: "all, sofas, doubleseater, seating"         },
+    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.png"    , tags: "all, sofas, doubleseater, seating"         },
     {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-16.jpg"    , tags: "all, stool, seating, singleseater"         },
     {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-12.jpg"    , tags: "all, couch, seating, singleseater"         },
     {id: 11, name: 'Furniture 11', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-11.jpg"    , tags: "all, self, wood"         },
@@ -30,7 +30,7 @@ const products = [
     {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-3.jpg"       , tags: "all, bed, bedroom, bedding"         },
     {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-6.jpg"       , tags: "all, table, round, wood"         },
     {id: 17, name: 'Furniture 17', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-17.jpg"    , tags: "all, table, wood, legs"         },
-    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/couch.jpg"             , tags: "all, seating, doubleseater, sofa, couch" },
+    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/couch.jpg"             , tags: "all, seating, doubleseater, sofas, couch" },
     {id: 19, name: 'Furniture 19', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/forma.jpg"             , tags: "all, aesthetic, holder" },
     {id: 20, name: 'Furniture 20', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/holder.jpg"            , tags: "all, holder, lighting, aesthetic" },
     {id: 21, name: 'Furniture 21', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light 4.jpg"           , tags: "all, seating, wood"     },
@@ -69,7 +69,8 @@ function categoriesSelector(){
         if(i==0){
             e.innerHTML = '<input type="radio" class="category-button" checked="checked" id="category-button-'+i+'" onclick="shop(1, `all`, 10, 22)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
         } else{
-            e.innerHTML = '<input type="radio" class="category-button"  id="category-button-'+i+'" onclick="shop(1, `lighting`, 0, 34)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
+            var tag = categories[i].title;
+            e.innerHTML = '<input type="radio" class="category-button"  id="category-button-'+i+'" onclick="shop(1, `'+tag.toLowerCase()+'`, 0, 34)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
         }
         el.appendChild(e)
     }
@@ -81,7 +82,6 @@ function shop(e, tag, start, end){
 
 
     
-    console.log(start, end)
 
     document.getElementById('pagecount-shop').innerHTML = '';
     document.getElementById('pagecount-shop').innerHTML = `<p>Page ${e} of 2</p>`;
@@ -128,14 +128,14 @@ function addToShopSection(start, end, tag){
             card.className = "cardDescription-shop"
             cardesc.innerHTML = `
     
-                                    <h5>${products[i].name}</h5>
+                                    <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " style="cursor: pointer;">${products[i].name}</h5>
                                     <p class="price">${products[i].price}</p>
                                     <p class="quick-shop-button">Quick Buy</p>
                                 `
     
             card.innerHTML =  `
                                 
-                                <img class='shop-image' src="${products[i].image}" alt="${products[i].name}" style="width:100%" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' ">
+                                <img class='shop-image' src="${products[i].image}" alt="${products[i].name}" style="width:100%" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " >
                                 <div class="add-to-cart-overlay">
                                     <ul>
                                         <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -156,6 +156,10 @@ function addToShopSection(start, end, tag){
     }
     if(productCount < 0){
         productCount = productDisplay;
+    }
+
+    if(productDisplay === 0){
+        elem.innerHTML = `<br><br><br><h1>Sorry! We do not have any product that belongs to the category - ${tag}.</h1><br><br><br>`
     }
 
     document.getElementById('showing-results').innerHTML = '';
@@ -257,13 +261,5 @@ function okFunction(){
 
 
 
-
-
-
-function displayProduct(productId){
-    window.location.href = "productDisplay.html";
-    displayProductImage(productId);
-    console.log("hello")
-}
 
 

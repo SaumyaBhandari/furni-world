@@ -310,6 +310,7 @@ section{
 
 #products-display-products1 .cardDescription-shop .shop-image{
     height: 240px;
+    cursor: pointer;
 }
 
 

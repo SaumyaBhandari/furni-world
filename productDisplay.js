@@ -85,7 +85,7 @@ function displayProductImage(productId){
                                 <div id="selectedProduct-addToCart">
                                     Quantity:
                                     <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" >
-                                    <input type="submit" value="Add To Cart" id="addToCartQuantityButton">
+                                    <input type="submit" value="Add To Cart" id="addToCartQuantityButton" onClick="addToCartMessage()">
                                 </div>
                                 <br>
                                 <br>
@@ -94,14 +94,16 @@ function displayProductImage(productId){
                                     <p>Add To Wishlist</p>
                                 </div>
                                 <br>
+                                <div id="open-cart" style="display:none">
+                                    <p>${products[i].name} has been added to cart. <a>Open Cart.</a></p>
+                                </div>
+                                <br>
                                 <hr>
                                 <div id="selectedProducts-extras">
                                     <p>Tags: ${products[i].tags}</p>
                                     <p>Extra: Some extra description here.</p>
                                     <p>Another: Another description.</p>
                                 </div>
-                                <br>
-                                <br>
                                 <br>
                                 <div id="askExpertSection"> 
                                     <h6>Have a query about ${products[i].name}?</h6>No Worries! you can <a>ask a help</a> from our experts.</br>
@@ -113,6 +115,10 @@ function displayProductImage(productId){
 
 }
 
+
+function addToCartMessage(){
+    document.getElementById("open-cart").style.display = "block";
+}
 
 
 

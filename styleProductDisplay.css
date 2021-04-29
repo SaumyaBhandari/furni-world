@@ -72,6 +72,7 @@
     color: #fff;
 }
 
+
 #addToCartQuantityButton:active{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -102,6 +103,15 @@
 #selectedProduct-addToWishlist p:hover{
     background-color: #ffffff;
     color: #212121;
+}
+
+
+#open-cart a{
+    font-weight: bold;
+    cursor: pointer;
+}
+#open-cart a:hover{
+    text-decoration: underline;
 }
 
 #selectedProducts-extras{
