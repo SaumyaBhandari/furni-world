@@ -934,8 +934,13 @@ section{
 
 
 
+
+
+
+
+
 #footer-section{
-    background-color: rgb(20, 20, 20);
+    background-color: #222222;
     height: 100%;
     width: 100%;
     padding: 1% 4%;
@@ -948,10 +953,8 @@ section{
 }
 
 
-
-
 footer .main-footer{  
-    background: #252525; 
+    background: #222222; 
     height: 100%;
     padding: 4%;
 }
@@ -959,7 +962,7 @@ footer .main-footer{
 footer ul{  padding-left: 0;  list-style: none;}
 
 /* Copy Right Footer */
-.footer-copyright { background: #222; padding: 5px 0;}
+.footer-copyright { background: #222222; padding: 5px 0;}
 .footer-copyright .logo {    display: inherit;}
 .footer-copyright nav {    float: right;    margin-top: 5px;}
 .footer-copyright nav ul {  list-style: none; margin: 0;  padding: 0;}

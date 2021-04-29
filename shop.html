@@ -102,9 +102,24 @@
 
 
         <div id="products-display-section">
+
             <div class="product-display-top">
+
+                <div id="togglesidenav">
+                    <p id = 'toggleSideNavButton'">Filter</p>
+                </div>
+
                 <div class="dropdown">
-                    <p id = 'toggleSideNavButton' onclick="toggleDropdown()">Sort By </p>
+                    <p class="dropbtn">Sort by </p>
+                        <div class="dropdown-content">
+                          <a href="">Price (Lowest-Highest)</a>
+                          <a href="">Price (Highest-Lowest)</a>
+                          <a href="">Newest to Oldest</a>
+                          <a href="">Oldest to Newest</a>
+                          <a href="">On Sale</a>
+                        </div>
+                </div>
+
             </div>
 
             <div id="products-display">
@@ -131,11 +146,12 @@
             </div>
             
 
-            <div id=""></div>
 
         </div>
 
     </section>
+
+
 
 
 
@@ -156,6 +172,21 @@
 
 
 
+    <section id="breadcrumb-section-shop">
+        <h3>You are here:</h3>
+        <a href="index.html">Home</a>
+        >
+        <a href="shop.html">Shop</a>
+    </section>
+
+    <section id="newsletter-section">
+        <h1>Furni-World Newsletter</h1>
+        <p>Sign up now & stay up to date.</p>
+        <div class="newsletter-email-area">
+            <input type="email" name="email-newsletter" id="email-address" placeholder="EMAIL">
+            <p id="submit-email">Submit >></p>
+        </div>
+    </section>
 
 
 

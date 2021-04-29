@@ -175,7 +175,7 @@ function recommendedProducts(){
 
     for(i=24; i<29; i++){
 
-
+        
 
         var card = document.createElement('div');
         card.className = "recommended-cardDescription"
