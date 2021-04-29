@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#selected-product-section{
+    padding: 4%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#selected-product-image{
+    flex-basis: 45%;
+}
+
+
+
+#selected-product-image-top{
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+#selected-product-image-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-product-bottom-images{
+    height: 120px;
+    flex-basis: 25%;
+    /* margin: 0% .1%; */
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#selected-product-desc{
+    margin: 0% 4%;
+    flex-basis: 46%;
+}
+
+#breadcrumb-display-section a{
+    text-decoration: none;
+    color: #555555;
+}
+
+#breadcrumb-display-section a:hover{
+    text-decoration: underline;
+}
+
+#selectedProduct-title{
+    color: #444444;
+}
+
+
+#quantity{
+    padding: 2% 4%;
+    margin: 0% 2%;
+    border: 1px solid #212121;
+}
+
+#addToCartQuantityButton{
+    padding: 2% 12%;
+    margin: 0%;
+    border: 1px solid #212121;
+    background-color: #212121;
+    color: #fff;
+}
+
+#addToCartQuantityButton:active{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+#selectedProduct-addToWishlist{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 0% 0% 0%;
+}
+
+
+
+
+
+
+#selectedProduct-addToWishlist p{
+    padding: 2% 6%;
+    margin: 0% 2%;
+    border: 2px solid #e65252;
+    transition-duration: .2s;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e65252;
+}
+
+#selectedProduct-addToWishlist p:hover{
+    background-color: #ffffff;
+    color: #212121;
+}
+
+#selectedProducts-extras{
+    margin: 3% 0%;
+}
+
+
+
+#askExpertSection a{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#askExpertSection a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+.checked{
+    color: orange;
+}
+
+#reviews-section{
+    padding: 4%;
+    text-align: center;
+}
+
+/* #reviewSectionTitle{
+    padding: 0% 20%;
+} */
+
+#review-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#review-left{
+    text-align: left;
+    margin: 0% 1%;
+    flex-basis: 45%;
+    padding-right: 4%;
+    border-right: 1px solid #212121;
+}
+
+
+#review-form .nam{
+    width: 100%;
+    margin: 1% 0%;
+    padding: 4%;
+}
+
+
+#submitReviewButton{
+    padding: 2% 6%;
+    border-radius: 0%;
+    width: fit-content;
+    border: 1px solid #212121;
+    background-color: #212121;
+    color: #fff;
+}
+
+
+
+#review-right{
+    margin: 0% 1%;
+    flex-basis: 45%;
+    /* padding: 10%; */
+}
+
+#review-cards{
+    padding: 10%;
+}
+
+#user-review-card{
+    padding: 8%;
+    border: 3px solid #e65252;
+}
+
+
+
+
+
+
+
+
+
+
+
+.quick-shop-button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+    border: 1px solid rgb(19, 19, 19);
+    width: 100%;
+    padding: 4% 4%;
+    opacity: 0;
+    transition-duration: .2s;
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.quick-shop-button:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397);
+    color: smokewhite;
+}
+
+
+
+
+#similar-products{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    color: #424141;
+    display: inline-block;
+    align-items: center;
+    text-align:center;
+}
+
+
+#similar-title {
+    margin: 0% 0% 2% 0%;
+}
+
+
+
+#similar-contents{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+#similar-contents .similar-cardDescription{
+    flex-basis: 16%;
+    margin: 0% 2% 0% 0%;
+    height: fit-content;
+}
+
+#similar-contents .similar-cardDescription:hover .similar-cardDescription .quick-shop-button{
+    opacity: 1;
+}
+
+.similar-cardDescription .add-to-cart-overlay{
+    margin-top: -25%;
+    width: 100%;
+}
+
+.similar-cardDescription:hover .add-to-cart-overlay{
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+#similar-contents .similar-cardDescription .similar-image{
+    height: 260px;
+    width: 100%;
+    margin: 1%;
+}
+
+.similar-cardDescription .quick-shop-button{
+    transform: scale(.8, .8);
+}
+
+

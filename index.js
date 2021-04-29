@@ -1,4 +1,4 @@
-const products = [
+const featuredProducts = [
     {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/chair.png"},
     {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-1.png"},
     {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-2.png"},
@@ -68,7 +68,7 @@ function landingSlider(){
 
     var elem = document.getElementById("landing-slider");
 
-    for(i=1; i<products.length; i++){
+    for(i=1; i<featuredProducts.length; i++){
         if(i == 2){
             continue;
         }
@@ -77,12 +77,12 @@ function landingSlider(){
         items.className = 'landing-sliderItems';
 
         items.innerHTML =   `   
-                                <img src="${products[i].image}" alt="${products[i].name}" style="width:100%">
+                                <img src="${featuredProducts[i].image}" alt="${featuredProducts[i].name}" style="width:100%">
                                 
                                 <br>
-                                <h3>${products[i].name}</h3>
+                                <h3>${featuredProducts[i].name}</h3>
                                 
-                                <p>${products[i].description}</p>
+                                <p>${featuredProducts[i].description}</p>
                             `
         
 
@@ -98,11 +98,11 @@ function landingSlider(){
 
 
 
-function featuredProducts(){
+function displayFeaturedProducts(){
 
     var elem = document.getElementById("cards-section");
 
-    for(i=0; i<products.length; i++){
+    for(i=0; i<featuredProducts.length; i++){
 
         var card = document.createElement('div');
         card.className = "card"
@@ -110,7 +110,7 @@ function featuredProducts(){
         card.className = "cardDescription"
 
         card.innerHTML =  `
-                            <img class='featuredProduct-image' src="${products[i].image}" alt="${products[i].name}" style="width:100%">
+                            <img class='featuredProduct-image' src="${featuredProducts[i].image}" alt="${featuredProducts[i].name}" style="width:100%">
                             <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -123,8 +123,8 @@ function featuredProducts(){
 
         cardesc.innerHTML = `
 
-                                <h5>${products[i].name}</h5>
-                                <p class="price">${products[i].price}</p>
+                                <h5>${featuredProducts[i].name}</h5>
+                                <p class="price">${featuredProducts[i].price}</p>
 
                             `
 
@@ -372,7 +372,7 @@ function slickSliderFurnitureSets(){
 
 
 landingSlider()
-featuredProducts()
+displayFeaturedProducts()
 topCategories()
 miniShop()
 furnitureSets()

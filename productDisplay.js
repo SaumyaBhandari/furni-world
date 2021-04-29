@@ -1,17 +1,3 @@
-categoreyNames = ['All', 'Lighting', 'Stool', 'Office', 'Bathroom', 'Aesthetic', 'Seating', 'Sofas']
-categories = [];
-
-var inventTotal = 0;
-for(i=1; i<categoreyNames.length; i++){
-    var inventory = Math.floor((Math.random() * 300) + 50);
-    categories[i] = {id: `${i}`, title: `${categoreyNames[i]}`, inventory: `${inventory}`}
-    inventTotal += inventory;
-}
-
-categories[0] = {id: `0`, title: `${categoreyNames[0]}`, inventory: `${inventTotal}`}
-
-
-
 const products = [
     {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-1.jpg"       , tags: "all, sofa, singleseater, seating"         },
     {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"       , tags: "all, sofa, singleseater, seating"         },
@@ -50,142 +36,115 @@ const products = [
 ]
 
 
-
-
-
-
-
-function categoriesSelector(){
-
-
-
-    var el = document.getElementById('category-selector')
-    var start = 0
-    var end = products.length
-
-    for(i=0; i<categories.length; i++){
-        var e = document.createElement('label')
-        e.className = 'category-selector-inner';
-        if(i==0){
-            e.innerHTML = '<input type="radio" class="category-button" checked="checked" id="category-button-'+i+'" onclick="shop(1, `all`, 10, 22)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
-        } else{
-            e.innerHTML = '<input type="radio" class="category-button"  id="category-button-'+i+'" onclick="shop(1, `lighting`, 0, 34)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
-        }
-        el.appendChild(e)
-    }
-
+function getParameter( parameterName ){
+    let parameters = new URLSearchParams(window.location.search);
+    let param = parameters.get(parameterName)
+    return String(param);
 }
 
 
-function shop(e, tag, start, end){
 
-
-    
-    console.log(start, end)
-
-    document.getElementById('pagecount-shop').innerHTML = '';
-    document.getElementById('pagecount-shop').innerHTML = `<p>Page ${e} of 2</p>`;
-
+function displayProductImage(productId){
     
 
- 
-    if(e==2){
-        start  = 22;
-        document.getElementById('next-shop1').style.border = '3px solid #000'
-        document.getElementById('previous-shop1').style.border = '1px solid #000'
-        end = products.length
-    } else{
-        document.getElementById('previous-shop1').style.border = '3px solid #000'
-        document.getElementById('next-shop1').style.border = '1px solid #000'
+    var elem = document.getElementById("selected-product-image-top");
+    var elem2 = document.getElementById("selected-product-image-bottom");
+    var elem3 = document.getElementById("selected-product-desc");
+
+    for(i=8; i<12; i++){
+        var el = document.createElement("div")
+        el.className = "selected-product-bottom-images"
+        el.style.backgroundImage = `url(${products[i].image})`;
+        elem2.appendChild(el);
     }
 
-    tag = tag;
 
-    addToShopSection(start, end, tag)
-
-}
-
-function addToShopSection(start, end, tag){
-
-    var elem = document.getElementById("products-display-products1");
-    elem.innerHTML = '';
-
-    var productCount = -10;
-    var productDisplay = 0;
-    
     for(i=0; i<products.length; i++){
-        if(products[i].tags.includes(tag)){
-            productCount++;
-        }
-    }
+        if(productId === products[i].id){
 
-    for(i=start; i<end; i++){
+            elem.style.backgroundImage = `url(${products[i].image})`;
 
-        if(products[i].tags.includes(tag)){
-            var card = document.createElement('div');
-            card.className = "product-card"
-            var cardesc = document.createElement('div')
-            card.className = "cardDescription-shop"
-            cardesc.innerHTML = `
-    
-                                    <h5>${products[i].name}</h5>
-                                    <p class="price">${products[i].price}</p>
-                                    <p class="quick-shop-button">Quick Buy</p>
-                                `
-    
-            card.innerHTML =  `
-                                
-                                <img class='shop-image' src="${products[i].image}" alt="${products[i].name}" style="width:100%" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' ">
-                                <div class="add-to-cart-overlay">
-                                    <ul>
-                                        <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
-                                        <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
-                                        <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
-                                    </ul>
+            elem3.innerHTML = `
+                                <div id="breadcrumb-display-section">
+                                    <a href="index.html">Home</a> >
+                                    <a href="shop.html">Shop</a> >
+                                    <a href="productDisplay.html">${products[i].name}</a>
                                 </div>
                                 <br>
-                                
-        
+                                <br>
+                                <div id="selectedProduct-title">
+                                    <h1>${products[i].name}</h1>
+                                    <h5>${products[i].price}</h5>
+                                </div>
+                                <hr>
+                                <br>
+                                <div id="selectedProduct-description">
+                                    <p>${products[i].description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aperiam. Laboriosam delectus dolorem perferendis quaerat, pariatur blanditiis accusamus eius tempore cupiditate velit nihil aut, nesciunt illo repellat reiciendis, porro expedita.</p>
+                                </div>
+                                <br>
+                                <div id="selectedProduct-addToCart">
+                                    Quantity:
+                                    <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" >
+                                    <input type="submit" value="Add To Cart" id="addToCartQuantityButton">
+                                </div>
+                                <br>
+                                <br>
+                                <div id="selectedProduct-addToWishlist">
+                                    <img src="images/icons/heart-1.png" alt="wishlist" srcset="">
+                                    <p>Add To Wishlist</p>
+                                </div>
+                                <br>
+                                <hr>
+                                <div id="selectedProducts-extras">
+                                    <p>Tags: ${products[i].tags}</p>
+                                    <p>Extra: Some extra description here.</p>
+                                    <p>Another: Another description.</p>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div id="askExpertSection"> 
+                                    <h6>Have a query about ${products[i].name}?</h6>No Worries! you can <a>ask a help</a> from our experts.</br>
+                                </div>
                             `
-            card.appendChild(cardesc)
-            elem.appendChild(card)  
-            productDisplay++; 
         }
-
-         
-    }
-    if(productCount < 0){
-        productCount = productDisplay;
     }
 
-    document.getElementById('showing-results').innerHTML = '';
-    document.getElementById('showing-results').innerHTML = `Showing results ${productDisplay} of ${productCount}`;
 
 }
 
 
 
 
+var form = document.getElementById("review-form");
+function handleForm(event) { 
+    event.preventDefault(); 
+} 
+form.addEventListener('submit', handleForm);
 
-    
+function submitReview(){
+    alert("The your reiew has been submitted succcessfully!");
+    location.reload()
+}
 
-function recommendedProducts(){
 
-    var elem = document.getElementById("recommended-contents");
+function similarProducts(){
+
+    var elem = document.getElementById("similar-contents");
 
     for(i=24; i<29; i++){
 
         
 
         var card = document.createElement('div');
-        card.className = "recommended-cardDescription"
+        card.className = "similar-cardDescription"
         
         var cardesc = document.createElement('div')
-        cardesc.className = "recommended-cardDescription"
+        cardesc.className = "similar-cardDescription"
 
         card.innerHTML =  `
 
-                    <img class='recommended-image'src="${products[i].image}" alt="casting-couch">
+                    <img class='similar-image'src="${products[i].image}" alt="casting-couch">
                     <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -210,60 +169,9 @@ function recommendedProducts(){
 }
 
 
-categoriesSelector()
-shop(1, 'all', 10, 22)
-recommendedProducts()
+
+const id = getParameter('id')
 
 
-
-
-var form = document.getElementById("newsletter-email-area");
-function handleForm(event) { 
-    event.preventDefault(); 
-} 
-form.addEventListener('submit', handleForm);
-
-function submitFunction(){
-    document.getElementById("newsletter-added-area").style.display = 'flex';
-}
-
-function unsubscribeFunction(){
-    document.getElementById("newsletter-added-area").style.display = 'none';
-    document.getElementById("newsletter-next-area").style.display = 'flex';
-}
-
-function okFunction(){
-
-    document.getElementById("newsletter-added-area").style.display = 'none';
-    document.getElementById("newsletter-next-area").style.display = 'none';
-    location.reload()
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function displayProduct(productId){
-    window.location.href = "productDisplay.html";
-    displayProductImage(productId);
-    console.log("hello")
-}
-
-
+displayProductImage(parseInt(id))
+similarProducts()
