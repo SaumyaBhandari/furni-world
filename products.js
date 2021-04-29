@@ -215,3 +215,29 @@ shop(1, 'all', 10, 22)
 recommendedProducts()
 
 
+
+
+var form = document.getElementById("newsletter-email-area");
+function handleForm(event) { 
+    event.preventDefault(); 
+} 
+form.addEventListener('submit', handleForm);
+
+function submitFunction(){
+    document.getElementById("newsletter-added-area").style.display = 'flex';
+}
+
+function unsubscribeFunction(){
+    document.getElementById("newsletter-added-area").style.display = 'none';
+    document.getElementById("newsletter-next-area").style.display = 'flex';
+}
+
+function okFunction(){
+
+    document.getElementById("newsletter-added-area").style.display = 'none';
+    document.getElementById("newsletter-next-area").style.display = 'none';
+    location.reload()
+}
+
+
+

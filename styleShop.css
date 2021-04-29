@@ -561,7 +561,7 @@ section{
     justify-content: center;
 }
 
-.newsletter-email-area{
+#newsletter-email-area{
     display: flex;
     text-align: center;
     align-items: center;
@@ -575,26 +575,84 @@ section{
     background-color: transparent;
     border: none;
     color: #fff;
+    border: none;
     border-bottom: 4px solid #fff;
     padding: .5%;
+}
+
+#email-address:focus {
+    outline: none;
 }
 
 
 #submit-email{
     /* border: 1px solid #fff; */
     cursor: pointer;
-    padding: 1.4% 4%;
-    border: 1px solid transparent;
-    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    padding: 1% 4%;
+    margin-left: 2%;
+    border: 1px solid white;
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0); */
     transition-duration: .2s;
 }
 
 #submit-email:hover{
-    /* border: 1px solid #fff; */
+    background-color: #fff;
+    color: #000;
+}
+
+#newsletter-added-area{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: 30%;
+}
+
+#newsletter-added-area p{
+    flex-wrap: wrap;
+}
+
+#unsubscribe{
     cursor: pointer;
     padding: 1.4% 4%;
-    border: 1px solid #fff;
-    border-bottom: 4px solid #fff;
+    margin-left: 2%;
+    border: 1px solid white;
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0); */
+    transition-duration: .2s;
+}
+
+#unsubscribe:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+#newsletter-next-area{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: 35%;
+}
+
+#newsletter-next-area p{
+    flex-wrap: wrap;
+}
+
+#ok{
+    cursor: pointer;
+    padding: 1.4% 4%;
+    margin-left: 2%;
+    border: 1px solid white;
+    /* border-bottom: 4px solid rgba(255, 255, 255, 0); */
+    transition-duration: .2s;
+}
+
+#ok:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 
