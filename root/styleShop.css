@@ -253,50 +253,21 @@ section{
     flex-basis: 50%;
 }
 
-.product-display-top p{
+#toggleSideNavButton{
     padding: .5% 4%;
     border: 1px solid #000;
     width: fit-content;
     text-align: center;
 }
 
-#dropdown-content-products {
-    background-color: #ebebeb;
-    position: absolute;
-    padding: .5% 2%;
-    width: max-content;
-    display: none;
-    box-shadow: 0px 8px 16px 0px rgba(221, 221, 221, 0.2);
-    z-index: 1;
+
+
+
+#products-display{
+    display: block;
 }
 
-
-
-
-
-
-
-#dropdown-content-products a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  color: rgb(15, 15, 15);
-}
-
-#dropdown-content-products a:hover {
-    text-decoration: none;
-    background-color: #f1f1f1;
-    color: #000;
-}
-
-
-
-
-
-
-
-
-#products-display-products{
+#products-display-products1{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -304,17 +275,24 @@ section{
     
 }
 
-#products-display-products .cardDescription-shop{
+#products-display-products1 .cardDescription-shop{
     flex-basis: 21%;
     margin: 1% ;
     /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.144); */
-    height: 300px;
+    height: 340px;
     background-color: #fff;
 }
 
-#products-display-products .cardDescription-shop .shop-image{
-    height: 180px;
+#products-display-products1 .cardDescription-shop .shop-image{
+    height: 200px;
 }
+
+
+
+
+
+
+
 
 
 
@@ -333,6 +311,10 @@ section{
 .cardDescription-shop:hover .add-to-cart-overlay{
     opacity: 1;
     transition-duration: .5s;
+}
+
+.cardDescription-shop:hover .quick-shop-button{
+    opacity: 1;
 }
 
 .add-to-cart-overlay ul{
@@ -364,4 +346,55 @@ section{
     text-align: center;
     padding: 2% 8%;
     transform: translate(0, -50%);
+}
+
+.quick-shop-button{
+    color: rgb(5, 5, 5);
+    border: 1px solid #000;
+    width: 100%;
+    padding: 4% 4%;
+    opacity: 0;
+    transition-duration: .2s;
+}
+
+.quick-shop-button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.product-display-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.previous-next-buttons{
+    display: flex;
+    flex: 33%;
+}
+
+.product-display-bottom-buttons{
+    margin: 0% 2%;
+    border: 1px solid #000;
+    padding: 1% 2%;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.product-display-bottom-buttons:hover{
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.showing-results{
+    flex: 33%;
+    text-align: right;
 }

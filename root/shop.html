@@ -89,21 +89,35 @@
         <div id="products-display-section">
             <div class="product-display-top">
                 <div class="dropdown">
-                    <p onclick="toggleDropdown()">Sort By </p>
-                    <div id="dropdown-content-products">
-                      <a href="">Most Popular</a>
-                      <a href="">Newest to Oldest</a>
-                      <a href="">Oldest to Newest</a>
-                      <a href="">Price (High - Low)</a>
-                      <a href="">Price (Low - High)</a>
-                    </div>
+                    <p id = 'toggleSideNavButton' onclick="toggleDropdown()">Sort By </p>
+            </div>
+
+            <div id="products-display">
+                <div id="products-display-products1">
+                </div>
+                <div id="products-display-products2">
                 </div>
             </div>
 
-            <div id="products-display-products">
+            <div class="product-display-bottom">
+                <div class="previous-next-buttons">
+                    <div class = "product-display-bottom-buttons" id="previous-shop"  onclick="shop(1)"> < Prev </div>
+                    <div class = "product-display-bottom-buttons" id="previous-shop1" onclick="shop(1)"> 1 </div>
+                    <div class = "product-display-bottom-buttons" id="next-shop1" onclick="shop(2)" > 2 </div>
+                    <div class = "product-display-bottom-buttons" id="next-shop"  onclick="shop(2)" > Next > </div>
+                </div>
 
+                <div id="pagecount-shop">
 
+                </div>
+
+                <div class="showing-results">
+                    <p>Showing 12 of 24 results</p>
+                </div>
             </div>
+            
+
+            <div id=""></div>
 
         </div>
 
