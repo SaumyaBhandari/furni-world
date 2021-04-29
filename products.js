@@ -144,6 +144,7 @@ function addToShopSection(start, end, tag){
                                     </ul>
                                 </div>
                                 <br>
+                                <br>
                                 
         
                             `

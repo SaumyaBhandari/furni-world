@@ -7,6 +7,9 @@
     z-index: inherit;
 }
 
+section{
+    margin: 0% 0% 4% 0%;
+}
 
 #header{
     position: sticky;
@@ -37,10 +40,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-section{
-    margin: 0% 0% 4% 0%;
-    background-color: #eeeeee;
-}
+
 
 #nav nav ul li{
     float: left;
@@ -119,20 +119,19 @@ section{
 #shop-title-section{
     height: 200px;
     width: 100%;
-    
 }
 
 .shop-title-content{
     height: 100%;
     width: 100%;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.116), rgb(0, 0, 0)), url('images/further images/pexels-photo-2082092.jpeg');
+    background-image: linear-gradient(rgba(17, 17, 17, 0.267), rgb(0, 0, 0)), url('images/further images/7.jpg');
 }
 
 .shop-title-content{
@@ -171,8 +170,8 @@ section{
 #shop-section{
     display: flex;
     flex-wrap: wrap;
-    background-color: #eeeeee;
-    padding: 2%;
+    background-color: #ffffff;
+    padding: 2% 4% 4% 4%;
 }
 
 
@@ -189,7 +188,6 @@ section{
     position: sticky;
     top: 120px;
     bottom: 0;
-    overflow-y: scroll;
     height: 100%;
 }
 
@@ -221,10 +219,7 @@ section{
     padding: 2%;
 }
 
-#products-display-section{
-    flex-basis: 80%;
 
-}
 
 #category-selector label:hover {
     background-color: rgb(255, 255, 255);
@@ -296,28 +291,26 @@ section{
 
 
 
-
 #products-display-section{
-    padding: 0% 0% 0% 2%;
+    flex-basis: 80%;
+    padding: 0% 0% 0% 6%;
     
 }
 
 .product-display-top{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.dropdown{
-    height: 100%;
-    flex-basis: 50%;
-}
+
 
 #togglesidenav{
     flex-basis: 50%;
 }
 
 #toggleSideNavButton{
-    padding: .5% 4%;
+    padding: 1% 6%;
     border: 1px solid #000;
     width: fit-content;
     text-align: center;
@@ -335,10 +328,10 @@ section{
 .dropbtn {
     background-color: #000000;
     color: white;
-    padding: 1% 4%;
+    padding: 1% 6%;
     font-size: 16px;
+    margin-left: 69%;
     text-align: right;
-    border: none;
     cursor: pointer;
     width: fit-content;
     transition-duration: .2s;
@@ -348,10 +341,12 @@ section{
 
 .dropdown {
     flex-basis: 50%;
+    width: fit-content;
 }
 
 .dropdown-content {
     display: none;
+    margin-left: 69%;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -409,15 +404,15 @@ section{
 }
 
 #products-display-products1 .cardDescription-shop{
-    flex-basis: 21%;
-    margin: 1% ;
+    flex-basis: 22%;
+    margin: 1%;
     /* box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.144); */
-    height: 340px;
-    background-color: #fff;
+    height: 400px;
+    background-color: #f3f0f0;
 }
 
 #products-display-products1 .cardDescription-shop .shop-image{
-    height: 200px;
+    height: 240px;
 }
 
 
