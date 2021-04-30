@@ -52,6 +52,8 @@ const products = [
 
 
 
+
+
 function getParameter( parameterName ){
     let parameters = new URLSearchParams(window.location.search);
     let param = parameters.get(parameterName)

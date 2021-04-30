@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +16,21 @@
     <script src="https://use.fontawesome.com/0a9e2080a9.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styleProductDisplay.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styleCart.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
     <link href='https://css.gg/search.css' rel='stylesheet'>
     <link href='https://css.gg/user.css' rel='stylesheet'>
     <link href='https://css.gg/bookmark.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 </head>
 
 
-
-
 <body>
-    
-
     <header id='header'>
 
         <div id="title"><h4>Furni-World</h4></div>
@@ -41,7 +39,7 @@
             <nav>
                 <ul>
                     <li><p><a href="index.html">Home </a></p></li>
-                    <li><p><a href="shop.html?category=all"">Shop</a></p></li>
+                    <li><p><a href="shop.html?category=all">Shop</a></p></li>
                     <li><p><a href="productDisplay.html?id=1">Product</a></p></li>
                     <li><p><a href="blog.html">Blog</a></p></li>
                     <li><p><a href="conact.html">Contact</a></p></li>
@@ -64,124 +62,14 @@
 
 
 
-    <section id="selected-product-section">
-
-        <div id="selected-product-image">
-            <div id="selected-product-image-top"></div>
-            <div id="selected-product-image-bottom">
-
-            </div>
-        </div>
-
-        <div id="selected-product-desc"></div>
 
 
-    </section>
 
+    <section id="errorSection">
 
-    <hr>
         
-    <br>
 
-
-
-
-    <section id="reviews-section">
-
-        <div id="reviewSectionTitle">
-            <h1>Reviews</h1>
-        </div>
-
-        <br>
-                <br>
-                <br>
-
-        <div id="review-content">
-
-            <div id="review-left">
-
-                <h4>Let others know what you think about this product.</h4>
-                <br>
-                <p>Required Sections are marked with *</p>
-                <form action="" id="review-form" onsubmit="submitReview()">
-                    <div class="namenemail">
-                        <input type="text" placeholder="Name*" required id="nameTextBox" class="nam">
-    
-                        <input type="email" placeholder="Email*" required id="emailTextBox" class="nam">
-                        <textarea id="reviewArea" name="review" rows="8"  required placeholder="Your Review Here*" class="nam"></textarea>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <br>
-                        <br>
-                        <input type="submit" value="Submit Your Review" id="submitReviewButton" >
-                        
-                    </div>
-    
-                </form>
-            </div>
-
-
-            <div id="review-right">
-
-                <div id="review-title">
-                    <h4>Reviews from users</h4>
-                </div>
-
-                <div id="review-cards">
-
-                    <div id="user-review-card">
-                        <img src="images/icons/user.png" alt="">
-                        <br>
-                        <br>
-                        <h5>Firstname Surname</h5>
-                        <br>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <br>
-                        <br>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium magni tempore voluptates inventore.</p>
-                        <br>
-                        <br><br>
-                        <p style="text-align: left;">Response: Positive</p>
-                        <p style="text-align: left;">Buying: Recommended</p>
-                    </div>
-
-                    
-
-
-                </div>
-                
-            </div>
-
-
-        </div>
-            
     </section>
-
-    
-
-    <section id="similar-products">
-        <div id="similar-title">
-            <h1>Similar Products</h1>
-            <!-- <p>Furni-World Special for the year 2021. Based upon the most purchased product of 2020.</p> -->
-        </div>
-        <br>
-        <div id="similar-contents">
-
-        </div>
-    </section>    
-
-
-
-
-
-
 
 
 
@@ -269,18 +157,7 @@
         </div>
         </div>
     </footer>
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-
+    
 </body>
-
-<!-- <script src="index.js"></script> -->
-<script src="productDisplay.js"></script>
-<script src="cart.js"></script>
-
 
 </html>

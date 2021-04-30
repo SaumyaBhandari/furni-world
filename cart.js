@@ -33,138 +33,144 @@ const products = [
     {id: 32, name: 'Furniture 32', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/stool4.jpg"            , tags: "all, seating, stool, singleseater" },
     {id: 33, name: 'Furniture 33', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/table.jpg"             , tags: "all, table" },
     {id: 34, name: 'Furniture 34', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/table2.jpg"            , tags: "all, table" },
-]
+];
 
 
 
+let cart = [
+    {id: 22, name: 'Furniture 22', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light1.jpg"            , tags: "all, lighting" },
+    {id: 23, name: 'Furniture 23', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light2.jpg"            , tags: "all, lighting, aesthetic" },
+    {id: 24, name: 'Furniture 24', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light3.jpg"            , tags: "all, lighting" },
+    {id: 25, name: 'Furniture 25', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light12.jpg"           , tags: "all, lighting"     },
+    {id: 26, name: 'Furniture 26', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/mirror.jpg"            , tags: "all, decor, lighting, mirror, aesthetic" },
+    {id: 27, name: 'Furniture 27', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/pot.jpg"               , tags: "all, holder, decor, aesthetic" },
+    {id: 28, name: 'Furniture 28', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/pot2.jpg"              , tags: "all, holder, decor, aesthetic" },
+    {id: 29, name: 'Furniture 29', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/stool.jpg"             , tags: "all, seating, stool, singleseater" },
 
-function displayProductImage(productId){
-    
+];
 
-    var elem = document.getElementById("selected-product-image-top");
-    var elem2 = document.getElementById("selected-product-image-bottom");
-    var elem3 = document.getElementById("selected-product-desc");
-
-    for(i=8; i<12; i++){
-        var el = document.createElement("div")
-        el.className = "selected-product-bottom-images"
-        el.style.backgroundImage = `url(${products[i].image})`;
-        elem2.appendChild(el);
-    }
-
-
+function addToCart(prod){
     for(i=0; i<products.length; i++){
-        if(productId === products[i].id){
-
-            elem.style.backgroundImage = `url(${products[i].image})`;
-
-            elem3.innerHTML = `
-                                <div id="breadcrumb-display-section">
-                                    <a href="index.html">Home</a> >
-                                    <a href="shop.html?category=all">Shop</a> >
-                                    <a href="productDisplay.html">${products[i].name}</a>
-                                </div>
-                                <br>
-                                <br>
-                                <div id="selectedProduct-title">
-                                    <h1>${products[i].name}</h1>
-                                    <h5>${products[i].price}</h5>
-                                </div>
-                                <hr>
-                                <br>
-                                <div id="selectedProduct-description">
-                                    <p>${products[i].description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aperiam. Laboriosam delectus dolorem perferendis quaerat, pariatur blanditiis accusamus eius tempore cupiditate velit nihil aut, nesciunt illo repellat reiciendis, porro expedita.</p>
-                                </div>
-                                <br>
-                                <div id="selectedProduct-addToCart">
-                                    Quantity:
-                                    <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" >
-                                    <input type="submit" value="Add To Cart" id="addToCartQuantityButton" onClick="addToCartMessage()">
-                                </div>
-                                <br>
-                                <br>
-                                <div id="selectedProduct-addToWishlist">
-                                    <img src="images/icons/heart-1.png" alt="wishlist" srcset="">
-                                    <p>Add To Wishlist</p>
-                                </div>
-                                <br>
-                                <div id="open-cart" style="display:none">
-                                    <p>${products[i].name} has been added to cart. <a>Open Cart.</a></p>
-                                </div>
-                                <br>
-                                <hr>
-                                <div id="selectedProducts-extras">
-                                    <p>Tags: ${products[i].tags}</p>
-                                    <p>Extra: Some extra description here.</p>
-                                    <p>Another: Another description.</p>
-                                </div>
-                                <br>
-                                <div id="askExpertSection"> 
-                                    <h6>Have a query about ${products[i].name}?</h6>No Worries! you can <a>ask a help</a> from our experts.</br>
-                                </div>
-                            `
+        if(products[i].id == prod){
+            cart.push(products[i])
+            alert(`${products[i].name} added to cart.`)
         }
     }
-
-
-}
-
-
-function addToCartMessage(){
-    document.getElementById("open-cart").style.display = "block";
+    console.log(cart.length);
 }
 
 
 
-var form = document.getElementById("review-form");
-function handleForm(event) { 
-    event.preventDefault(); 
-} 
-form.addEventListener('submit', handleForm);
 
-function submitReview(){
-    alert("The your reiew has been submitted succcessfully!");
-    location.reload()
-}
+function showCartItems(){
 
+    var elem = document.getElementById("shopping-cart");
+    let price = 0;
+    
+    if(cart.length == 0){
+        elem.innerHTML = `<h1> There currently no items in cart. Please add some items to view products in cart.</h1>`
+    } else{
 
-function similarProducts(){
-
-    var elem = document.getElementById("similar-contents");
-
-    for(i=24; i<29; i++){
-
+        for(i=0; i<cart.length; i++){
         
-
-        var card = document.createElement('div');
-        card.className = "similar-cardDescription"
-        
-        var cardesc = document.createElement('div')
-        cardesc.className = "similar-cardDescription"
-
-        card.innerHTML =  `
-
-                    <img  style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='similar-image'src="${products[i].image}" alt="casting-couch">
-                    <div class="add-to-cart-overlay">
-                                <ul>
-                                    <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
-                                    <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
-                                    <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
-                                </ul>
-                            </div>`
-
-        cardesc.innerHTML = `
-                                <div class="special-image-desc">
-                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor:pointer">${products[i].name}</h5>
-                                        <p>${products[i].price}</p>
-                                        <p class="quick-shop-button">Quick Buy</p>
-                                </div>
-                                `
-
-        card.appendChild(cardesc)
-        elem.appendChild(card);
-
+            var itm = document.createElement("div")
+            itm.className = "item"
+    
+            itm.innerHTML = `
+            
+                    
+    
+                    <div class="image" style="background-image: url('${cart[i].image}')">
+                        
+                    </div>
+    
+                    <div class="description">
+                        <h6>Product</h6>
+                        <br>
+                        <span>${cart[i].name}</span>
+                        <span>$${cart[i].price}</span>
+                    </div>
+    
+                    <div class="quantity">
+                        <h6>Quantity</h6>
+                        <br>
+                        <button class="plus-btn" type="button" name="button">
+                            +
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="minus-btn" type="button" name="button">
+                            -
+                        </button>
+                    </div>
+    
+                <div class="total-price">
+                    <h6>Price</h6>
+                    <br>
+                    $${cart[i].price}
+                </div>
+    
+                <div class="buttons">
+                        <h6>Action</h6>
+                        <br>
+                        <span class="delete-btn">
+                            <p>Remove </p>
+                        </span>
+                        <span class="save-for-later">
+                            <p>Save</p>
+                        </span>
+                </div>
+            
+            `;
+    
+            if(i%2!=0){
+                itm.style.backgroundColor = "#f1f1f1"
+            }
+    
+            elem.appendChild(itm);
+    
+            price += parseInt(cart[i].price);
+    
+        }
     }
+    
+
+
+    elem2 = document.getElementById("checkout");
+    el = document.createElement("div")
+    el.innerHTML = `
+                            <div class="Title">
+                            <h3>Order Summary:</h3>
+                        </div>
+                        <br>
+                        <br>
+                        <div id="details">
+                            <p>Items: ${cart.length}</p>
+                            <p>Price: $${price}</p>
+                            <br>
+                            <div class="dropdown">
+                                <p onclick="toggleShippingOptions()" class="dropbtn">Shipping Category &nbsp;&nbsp;&nbsp;&#x25BC;</p>
+                                <div id="myDropdown" class="dropdown-content">
+                                <a href="">General Shipping:  $30</a>
+                                <a href="">Standard Shipping: $70</a>
+                                  <a href="">Same Day Delivery: $90</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="grandTotal">
+                            <h5>Total Cost: $${price+30}</h5>
+                        </div>
+                        <br>
+                        <br>
+                        <div id="checkOutButton">
+                            <p>Check Out</p>
+                        </div>
+    
+                    `
+
+    elem2.appendChild(el);
+
 
 }
 
@@ -176,8 +182,25 @@ function similarProducts(){
 
 
 
-const id = getParameter('id')
 
 
-displayProductImage(parseInt(id))
-similarProducts()
+
+
+
+
+function toggleShippingOptions() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
