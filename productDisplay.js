@@ -67,7 +67,7 @@ function displayProductImage(productId){
             elem3.innerHTML = `
                                 <div id="breadcrumb-display-section">
                                     <a href="index.html">Home</a> >
-                                    <a href="shop.html">Shop</a> >
+                                    <a href="shop.html?category=all">Shop</a> >
                                     <a href="productDisplay.html">${products[i].name}</a>
                                 </div>
                                 <br>
@@ -150,7 +150,7 @@ function similarProducts(){
 
         card.innerHTML =  `
 
-                    <img class='similar-image'src="${products[i].image}" alt="casting-couch">
+                    <img  style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='similar-image'src="${products[i].image}" alt="casting-couch">
                     <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -161,7 +161,7 @@ function similarProducts(){
 
         cardesc.innerHTML = `
                                 <div class="special-image-desc">
-                                        <h5>${products[i].name}</h5>
+                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor:pointer">${products[i].name}</h5>
                                         <p>${products[i].price}</p>
                                         <p class="quick-shop-button">Quick Buy</p>
                                 </div>

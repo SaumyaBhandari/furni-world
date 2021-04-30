@@ -39,8 +39,8 @@
             <nav>
                 <ul>
                     <li><p><a href="index.html">Home </a></p></li>
-                    <li><p><a href="shop.html">Shop</a></p></li>
-                    <li><p><a href="product.html">Product</a></p></li>
+                    <li><p><a href="shop.html?category=all">Shop</a></p></li>
+                    <li><p><a href="productDisplay.html?id=1">Product</a></p></li>
                     <li><p><a href="blog.html">Blog</a></p></li>
                     <li><p><a href="conact.html">Contact</a></p></li>
                 </ul>
@@ -88,7 +88,7 @@
                 <h1>Elucidate</h1>
                 <h5>Your Style</h5>
             </div>
-            <p id="shop-now-button">Shop Now</p>
+            <p id="shop-now-button" onclick="window.location.href = 'shop.html?category=all' ">Shop Now</p>
         </div>
 
     </section>
@@ -118,7 +118,7 @@
             
         </div>
         <br>
-        <div id="see-all-trending-products">
+        <div id="see-all-trending-products" onclick="window.location.href = 'shop.html?category=seating'">
             <p>
                 + View More
             </p>
@@ -142,7 +142,7 @@
         <div id="collectionTitle">
             <h1>Furni-World Collections</h1>
             <p>Save upto 35% off on the collections.</p>
-            <div id="seeAllCollections"> 
+            <div id="seeAllCollections" onclick="window.location.href = 'shop.html?category=all'"> 
                 <p>+ See All Collections </p> 
             </div>
         </div>
@@ -154,7 +154,7 @@
                     <div class="imageOverlay">
                         <p>From the designers of minimax studios.</p>
                         <h1>Comfort Lounging</h1>
-                        <h6>Explore Collection</h6>
+                        <h6 onclick="window.location.href = 'shop.html?category=sofas'">Explore Collection</h6>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@
                     <div class="imageOverlay">
                         <p>Straight from the heart of Sicily.</p>
                         <h1>Italian Collection</h1>
-                        <h6>Explore Collection</h6>
+                        <h6 onclick="window.location.href = 'shop.html?category=aesthetic'">Explore Collection</h6>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
             
             <h1>New Products</h1>
             <p>Newest Creations from top brand studios across the world.</p>
-             <div id="open-shop-button-new-products">
+             <div id="open-shop-button-new-products" onclick="window.location.href = 'shop.html?category=all'">
             <p>
                 Open Shop
             </p>
@@ -260,7 +260,7 @@
 
         <div id="special-section-title">
             <h1>Monthly Specials</h1>
-            <p id="open-shop-special">
+            <p id="open-shop-special" onclick="window.location.href = 'shop.html?category=bathroom'">
                 + View all Specials
             </p>
             <!-- <p>Furni-World Special for the year 2021. Based upon the most purchased product of 2020.</p> -->

@@ -52,10 +52,14 @@ const products = [
 
 
 
+function getParameter( parameterName ){
+    let parameters = new URLSearchParams(window.location.search);
+    let param = parameters.get(parameterName)
+    return String(param);
+}
 
 
-
-function categoriesSelector(){
+function categoriesSelector(category){
 
 
 
@@ -66,11 +70,11 @@ function categoriesSelector(){
     for(i=0; i<categories.length; i++){
         var e = document.createElement('label')
         e.className = 'category-selector-inner';
-        if(i==0){
-            e.innerHTML = '<input type="radio" class="category-button" checked="checked" id="category-button-'+i+'" onclick="shop(1, `all`, 10, 22)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
+        var tag = categories[i].title.toLowerCase();
+        if(tag === category){
+            e.innerHTML = '<input type="radio" class="category-button" checked="checked" id="category-button-'+i+'"  onclick="window.location.href = `shop.html?category='+tag.toLowerCase()+'` "  onclick="shop(1, `'+tag.toLowerCase()+'`, 10, 22)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
         } else{
-            var tag = categories[i].title;
-            e.innerHTML = '<input type="radio" class="category-button"  id="category-button-'+i+'" onclick="shop(1, `'+tag.toLowerCase()+'`, 0, 34)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
+            e.innerHTML = '<input type="radio" class="category-button"  id="category-button-'+i+' " onclick="window.location.href = `shop.html?category='+tag.toLowerCase()+'` "   onclick="shop(1, `'+tag.toLowerCase()+'`, 0, 34)" name="radio"> <p>'+categories[i].title+'</p> <p>('+categories[i].inventory+')  </p> <span class="checkmark"></span>'
         }
         el.appendChild(e)
     }
@@ -159,7 +163,21 @@ function addToShopSection(start, end, tag){
     }
 
     if(productDisplay === 0){
-        elem.innerHTML = `<br><br><br><h1>Sorry! We do not have any product that belongs to the category - ${tag}.</h1><br><br><br>`
+        elem.innerHTML = `
+                            <br><br><br>
+                            <h1>Sorry! We do not have any product that belongs to the category - ${tag}.</h1>
+                            <br>
+                            <br>
+                            <h6>Don't worry! You can still view products from other categories. <a href="shop.html?category=all">Click Here</a> to view products of all categories.</h6>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br><br>
+                        `
     }
 
     document.getElementById('showing-results').innerHTML = '';
@@ -189,7 +207,7 @@ function recommendedProducts(){
 
         card.innerHTML =  `
 
-                    <img class='recommended-image'src="${products[i].image}" alt="casting-couch">
+                    <img style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='recommended-image'src="${products[i].image}" alt="casting-couch">
                     <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -200,7 +218,7 @@ function recommendedProducts(){
 
         cardesc.innerHTML = `
                                 <div class="special-image-desc">
-                                        <h5>${products[i].name}</h5>
+                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor: pointer" >${products[i].name}</h5>
                                         <p>${products[i].price}</p>
                                         <p class="quick-shop-button">Quick Buy</p>
                                 </div>
@@ -214,8 +232,17 @@ function recommendedProducts(){
 }
 
 
-categoriesSelector()
-shop(1, 'all', 10, 22)
+var category = getParameter("category").toLowerCase();
+var start = 0;
+var end = 34;
+
+
+if(category === 'all'){
+    start = 10;
+    end = 22;
+}
+categoriesSelector(category)
+shop(1, category, start, end)
 recommendedProducts()
 
 

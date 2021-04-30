@@ -522,7 +522,7 @@ section{
     background-image: linear-gradient(rgba(80, 80, 80, 0.493), #000) ,url("images/further images/4.jpg");
     padding: 4%;
     background-position: bottom;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin: 0% 0% -1% 0%;
     color: #fff;
 }
