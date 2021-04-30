@@ -79,12 +79,12 @@ section{
 
 
 #categories-sorting-section{
-    flex-basis: 20%;
+    flex-basis: 19%;
     padding: 0% 4% 0% 0%;
     border-right: 1px solid black;
     position: sticky;
     top: 120px;
-    bottom: 0;
+    bottom: 0; 
     height: 100%;
 }
 
@@ -188,8 +188,9 @@ section{
 
 
 
+
 #products-display-section{
-    flex-basis: 80%;
+    flex-basis: 75%;
     padding: 0% 0% 0% 6%;
     
 }
@@ -427,7 +428,49 @@ section{
     text-align: right;
 }
 
+@media screen and (max-width: 1200px) {
+    #products-display-products1 .cardDescription-shop{
+        flex-basis: 30%;
+        margin: 1%;
+    }
+    
+    #products-display-products1 .cardDescription-shop .shop-image{
+        height: 240px;
+        cursor: pointer;
+    }
+    .dropbtn {
+        margin-left: 20%;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    #products-display-products1 .cardDescription-shop{
+        flex-basis: 50%;
+        margin: 1%;
+    }
+    
+    #products-display-products1 .cardDescription-shop .shop-image{
+        height: 240px;
+        cursor: pointer;
+        
+    }
+    .add-to-cart-overlay {
+        opacity: 1;
+    }
+}
 
+@media screen and (max-width: 700px) {
+    #products-display-products1 .cardDescription-shop{
+        flex-basis: 100%; 
+        margin-left: 50%;
+    }
+    
+    #products-display-products1 .cardDescription-shop .shop-image{
+        height: 240px;
+        cursor: pointer;
+        
+    }
+}
 
 
 
@@ -504,6 +547,43 @@ section{
     transform: scale(.8, .8);
 }
 
+
+@media screen and (max-width: 1000px) {
+    #recommended-contents .recommended-cardDescription{
+        flex-basis: 25%;
+        margin: 0% 2% 0% 0%;
+        height: fit-content;
+    }
+    
+    .quick-shop-button{
+        opacity: 1;
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+    #recommended-contents .recommended-cardDescription{
+        flex-basis: 35%;
+        margin: 0% 2% 0% 0%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #recommended-contents .recommended-cardDescription{
+        flex-basis: 50%;
+        margin: 0% 2% 0% 0%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #recommended-contents .recommended-cardDescription{
+        flex-basis: 100%;
+        margin: 0% 2% 0% 0%;
+        height: fit-content;
+    }
+}
 
 
 

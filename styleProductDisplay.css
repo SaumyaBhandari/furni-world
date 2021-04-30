@@ -147,6 +147,11 @@
     padding: 0% 20%;
 } */
 
+
+
+
+  
+
 #review-content{
     display: flex;
     flex-wrap: wrap;
@@ -293,3 +298,48 @@
 }
 
 
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    #selected-product-image{
+        flex-basis: 100%;
+    }
+
+    #selected-product-desc{
+        flex-basis: 100%;
+        padding: 8%;
+    }
+
+    #review-left{
+        flex-basis: 100%;
+        margin: 4%;
+        padding: 8%;
+    }
+    
+    #review-right{
+        flex-basis: 100%;
+        margin: 4%;
+        padding: 8%;
+    }
+
+
+    #similar-contents .similar-cardDescription{
+        flex-basis: 25%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #similar-contents .similar-cardDescription{
+        flex-basis: 100%;
+        margin: 8%;
+    }
+
+
+}

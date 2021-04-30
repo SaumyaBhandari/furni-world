@@ -98,6 +98,100 @@ section{
 
 
 
+@media only screen and (max-width: 600px) {
+
+    #header{
+        position: sticky;
+        top: 0%;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        color: #424141;
+        height: 64px;
+        background-color: #fff;
+        /* border-bottom: 1px solid #999; */
+        box-shadow: 2px 2px 2px 2px rgba(207, 207, 207, 0.281);
+    }
+
+    
+    #nav{
+        margin: .5%;
+        padding: 1%;
+        display: block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    section{
+        margin: 0% 0% 4% 0%;
+    }
+    
+    #nav nav ul li{
+        float: right;
+        margin: 1% 2%;
+        display: block;
+        font-weight:lighter;
+        font-size: 16px;
+        line-height: 18px;
+        align-items: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition-duration: 1s;
+    }
+    #nav nav ul li a{
+        color: #424141;
+    }
+    
+    #nav nav ul li:hover{
+        text-decoration: underline;
+        transition-duration: 1s;
+    
+    }
+    
+    #header-features{
+        margin: 1%;
+        width: 30%;
+        padding: 1%;
+    }
+    
+    
+    #header-features ul a{
+        margin: 1% 0%;
+        float: right;
+        align-items: center;
+        transform: scale(.6);
+        color: #424141;
+        display: block;
+        transition-duration: .2s;
+    }
+    
+    #header-features ul img a{ 
+        margin: 1% 2%;
+    }
+    
+    #header-features ul a:hover{ 
+        transform: scale(.8);
+    }
+    
+    
+
+}
+
+
+
+
+/* .search-input{
+    margin-top: 3%;
+    padding: 5% 7%;
+    margin-top: 1%;
+} */
+
+
+
+ 
+
 
 
 

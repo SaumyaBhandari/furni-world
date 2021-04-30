@@ -95,7 +95,7 @@ function displayProductImage(productId){
                                 </div>
                                 <br>
                                 <div id="open-cart" style="display:none">
-                                    <p>${products[i].name} has been added to cart. <a>Open Cart.</a></p>
+                                    <p>${products[i].name} has been added to cart. <a href="cart.html">Open Cart.</a></p>
                                 </div>
                                 <br>
                                 <hr>
