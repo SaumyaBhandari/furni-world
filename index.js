@@ -314,7 +314,7 @@ function slickSliderLandingSlider(){
         arrows: true,
         infinite: true,
         speed: 500,
-        dota: true,
+        dots: false,
         centerMode: true,
         centerPadding: '0%',
         slidesToShow: 1,

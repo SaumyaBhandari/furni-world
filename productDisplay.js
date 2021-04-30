@@ -176,6 +176,12 @@ function similarProducts(){
 
 
 
+
+
+
+
+
+
 const id = getParameter('id')
 
 

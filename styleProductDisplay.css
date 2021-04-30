@@ -190,11 +190,15 @@
 
 #review-cards{
     padding: 10%;
+    display: block;
+    width: 100%;
 }
 
 #user-review-card{
     padding: 8%;
     border: 3px solid #e65252;
+    color: #212121;
+    
 }
 
 

@@ -232,6 +232,11 @@ function recommendedProducts(){
 }
 
 
+
+  
+
+
+
 var category = getParameter("category").toLowerCase();
 var start = 0;
 var end = 34;
@@ -244,6 +249,7 @@ if(category === 'all'){
 categoriesSelector(category)
 shop(1, category, start, end)
 recommendedProducts()
+reviewSlider()
 
 
 
