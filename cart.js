@@ -38,14 +38,15 @@ const products = [
 
 
 let cart = [
-    {id: 22, name: 'Furniture 22', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light1.jpg"            , tags: "all, lighting" },
-    {id: 23, name: 'Furniture 23', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light2.jpg"            , tags: "all, lighting, aesthetic" },
-    {id: 24, name: 'Furniture 24', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light3.jpg"            , tags: "all, lighting" },
-    {id: 25, name: 'Furniture 25', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light12.jpg"           , tags: "all, lighting"     },
-    {id: 26, name: 'Furniture 26', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/mirror.jpg"            , tags: "all, decor, lighting, mirror, aesthetic" },
-    {id: 27, name: 'Furniture 27', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/pot.jpg"               , tags: "all, holder, decor, aesthetic" },
-    {id: 28, name: 'Furniture 28', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/pot2.jpg"              , tags: "all, holder, decor, aesthetic" },
-    {id: 29, name: 'Furniture 29', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/stool.jpg"             , tags: "all, seating, stool, singleseater" },
+    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-15.png"    , tags: "all, sofa, doubleseater, seating"         },
+    {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-16.jpg"    , tags: "all, stool, seating, singleseater"         },
+    {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-12.jpg"    , tags: "all, couch, seating, singleseater"         },
+    {id: 11, name: 'Furniture 11', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-11.jpg"    , tags: "all, self, wood"         },
+    {id: 9, name: 'Furniture 9', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-9.jpg"       , tags: "all, tub, bathroom, bath"         },
+    {id: 8, name: 'Furniture 8', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-8.jpg"       , tags: "all, lighting"         },
+    {id: 7, name: 'Furniture 7', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-7.jpg"       , tags: "all, lighting"         },
+    {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-3.jpg"       , tags: "all, bed, bedroom, bedding"         },
+    {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-products/product-6.jpg"       , tags: "all, table, round, wood"         },
 
 ];
 
@@ -88,7 +89,7 @@ function showCartItems(){
                         <h6>Product</h6>
                         <br>
                         <span>${cart[i].name}</span>
-                        <span>$${cart[i].price}</span>
+                        <span>${cart[i].price}</span>
                     </div>
     
                     <div class="quantity">
@@ -106,7 +107,7 @@ function showCartItems(){
                 <div class="total-price">
                     <h6>Price</h6>
                     <br>
-                    $${cart[i].price}
+                     ${cart[i].price}
                 </div>
     
                 <div class="buttons">

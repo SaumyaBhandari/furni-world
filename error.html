@@ -17,13 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleCart.css">
+    <link rel="stylesheet" href="error.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
-    <link href='https://css.gg/search.css' rel='stylesheet'>
-    <link href='https://css.gg/user.css' rel='stylesheet'>
-    <link href='https://css.gg/bookmark.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
@@ -31,6 +28,8 @@
 
 
 <body>
+
+    
     <header id='header'>
 
         <div id="title"><h4>Furni-World</h4></div>
@@ -41,8 +40,8 @@
                     <li><p><a href="index.html">Home </a></p></li>
                     <li><p><a href="shop.html?category=all">Shop</a></p></li>
                     <li><p><a href="productDisplay.html?id=1">Product</a></p></li>
-                    <li><p><a href="blog.html">Blog</a></p></li>
-                    <li><p><a href="conact.html">Contact</a></p></li>
+                    <li><p><a href="error.html">Blog</a></p></li>
+                    <li><p><a href="error.html">Contact</a></p></li>
                 </ul>
             </nav>
         </div>
@@ -50,9 +49,9 @@
         <div id="header-features">
             <ul>
                 <a href="cart.html" ><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></a>
-                <a><img   class="user-icon" src="images/icons/user.png" alt="" srcset=""></a>
-                <a><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></a>
-                <a><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></a>
+                <a href="error.html" ><img   class="user-icon" src="images/icons/user.png" alt="" srcset=""></a>
+                <a href="error.html" ><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></a>
+                <a href="error.html" ><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></a>
             </ul>
         </div>
 
@@ -67,7 +66,61 @@
 
     <section id="errorSection">
 
-        
+        <div id="error-title">
+            <h1>Oops! Page not Found!</h1>
+            <br>
+            <h5>It seems like a</h5>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div id="section404">
+            <img class="image404" id="chair1-404" src="images/error/4.png" alt="" srcset="" onclick="window.location.href = 'productDisplay.html?id=35'" >
+            <img class="image404" id="table-404" src="images/error/PngItem_1871322.png" alt="" srcset="" onclick="window.location.href = 'productDisplay.html?id=36'" >
+            <img class="image404" id="chair2-404" src="images/error/4.png" alt="" srcset="" onclick="window.location.href = 'productDisplay.html?id=35' " >
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="after-404-section">
+            <h5> (404) Error has occured</h5>
+            <p>Click either any product above to view the details of the product!</p>
+            <br> <br>
+        </div>
+        <br>
+        <br>
+        <div id="error-description">
+            <h5>It seems like either the webpage that you have navigated to is still under construction!</h5>
+            <br>
+            <br>
+            <img src="images/error/error-nav.png" alt="" style="width:50%">
+            <br>
+            <br>
+            <h5>Or simply the url that you have entered above is mistake. Which redirected you to this page</h5>
+        </div>
+        <br>
+        <br>
+        <hr>
+    </section>
+
+
+
+
+
+
+
+    <section id="recommended-products">
+
+        <div id="recommended-title">
+            <h1>Furni-World Recommends</h1>
+            <!-- <p>Furni-World Special for the year 2021. Based upon the most purchased product of 2020.</p> -->
+        </div>
+        <br>
+        <div id="recommended-contents">
+
+        </div>
 
     </section>
 
@@ -159,5 +212,10 @@
     </footer>
     
 </body>
+
+
+<script src="error.js"></script>
+
+
 
 </html>

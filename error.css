@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#errorSection{
+    padding: 4%;
+    text-align: center;
+}
+
+#error-title{
+    text-align: center;
+
+}
+
+#section404{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image404{
+    flex-basis: 25%;
+    height: 400px;
+    transition-duration: .2s;
+    cursor: pointer;
+    transform: scale(-1);
+}
+
+.image404:hover{
+    transform: scale(-1.1);
+}
+
+
+
+
+#after-404-section{
+    text-align: center;
+}
+
+
+
+
+
+
+#recommended-products{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    color: #424141;
+    display: inline-block;
+    align-items: center;
+    text-align:center;
+}
+
+
+#recommended-title {
+    margin: 0% 0% 2% 0%;
+}
+
+
+
+
+#recommended-contents{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: fit-content;
+    justify-content: center;
+}
+
+
+
+
+.add-to-cart-overlay {
+    background: rgba(0, 0, 0, 0); /* Black see-through */
+    color: #f1f1f1;
+    transition-duration: .5s;
+    color: white;
+    text-align: center;
+    height: 80px;
+    margin-top: -8%;
+    opacity: 0;
+    display: flex;
+}
+.add-to-cart-overlay ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 1%;
+}
+
+.add-to-cart-overlay ul li{
+    margin: -1% 8%;
+    display: inline-block;
+}
+
+.add-to-cart-overlay ul li img{
+    color: rgb(41, 41, 41);
+    transition-duration: .2s;
+    transform: scale(.6);
+}
+
+.add-to-cart-overlay ul li img:hover{
+    transform: scale(.8);
+}
+
+
+#recommended-contents .recommended-cardDescription{
+    flex-basis: 16%;
+    margin: 0% 2% 0% 0%;
+    height: fit-content;
+}
+
+#recommended-contents .recommended-cardDescription:hover .recommended-cardDescription .quick-shop-button{
+    opacity: 1;
+}
+
+.recommended-cardDescription .add-to-cart-overlay{
+    margin-top: -25%;
+    width: 100%;
+}
+
+.recommended-cardDescription:hover .add-to-cart-overlay{
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+#recommended-contents .recommended-cardDescription .recommended-image{
+    height: 260px;
+    width: 100%;
+    margin: 1%;
+}
+
+.recommended-cardDescription .quick-shop-button{
+    transform: scale(.8, .8);
+}
+
+.quick-shop-button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 19, 19);
+    border: 1px solid rgb(19, 19, 19);
+    width: 100%;
+    padding: 4% 4%;
+    opacity: 0;
+    transition-duration: .2s;
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.quick-shop-button:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397);
+    color: smokewhite;
+}

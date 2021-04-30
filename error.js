@@ -1,12 +1,12 @@
 const products = [
-    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-1.jpg"       , tags: "all, sofa, singleseater, seating"         },
-    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"       , tags: "all, sofa, singleseater, seating"         },
+    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-1.jpg"       , tags: "all, sofas, singleseater, seating"         },
+    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-2.jpg"       , tags: "all, sofas, singleseater, seating"         },
     {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-4.jpg"       , tags: "all, table, wood"         },
-    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.png"       , tags: "all, sofa, doubleseater"         },
+    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-5.png"       , tags: "all, sofas, doubleseater"         },
     {id: 10, name: 'Furniture 10', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-10.png"    , tags: "all, chair, seating, singleseater"         },
-    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.png"    , tags: "all, sofa, seating, doubleseater"         },
-    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.png"    , tags: "all, sofa, doubleseater, seating"         },
-    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.png"    , tags: "all, sofa, doubleseater, seating"         },
+    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-13.png"    , tags: "all, sofas, seating, doubleseater"         },
+    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-14.png"    , tags: "all, sofas, doubleseater, seating"         },
+    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-15.png"    , tags: "all, sofas, doubleseater, seating"         },
     {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-16.jpg"    , tags: "all, stool, seating, singleseater"         },
     {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-12.jpg"    , tags: "all, couch, seating, singleseater"         },
     {id: 11, name: 'Furniture 11', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-11.jpg"    , tags: "all, self, wood"         },
@@ -16,7 +16,7 @@ const products = [
     {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-3.jpg"       , tags: "all, bed, bedroom, bedding"         },
     {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-6.jpg"       , tags: "all, table, round, wood"         },
     {id: 17, name: 'Furniture 17', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-products/product-17.jpg"    , tags: "all, table, wood, legs"         },
-    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/couch.jpg"             , tags: "all, seating, doubleseater, sofa, couch" },
+    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/couch.jpg"             , tags: "all, seating, doubleseater, sofas, couch" },
     {id: 19, name: 'Furniture 19', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/forma.jpg"             , tags: "all, aesthetic, holder" },
     {id: 20, name: 'Furniture 20', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/holder.jpg"            , tags: "all, holder, lighting, aesthetic" },
     {id: 21, name: 'Furniture 21', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/light 4.jpg"           , tags: "all, seating, wood"     },
@@ -33,124 +33,27 @@ const products = [
     {id: 32, name: 'Furniture 32', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/stool4.jpg"            , tags: "all, seating, stool, singleseater" },
     {id: 33, name: 'Furniture 33', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/table.jpg"             , tags: "all, table" },
     {id: 34, name: 'Furniture 34', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/products/table2.jpg"            , tags: "all, table" },
-    {id: 35, name: 'Furniture 35', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/error/4.png"            , tags: "chair, seating, table" },
-    {id: 36, name: 'Furniture 36', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/error/PngItem_1871322.png"            , tags: "all, table" },
 ]
 
-function getParameter( parameterName ){
-    let parameters = new URLSearchParams(window.location.search);
-    let param = parameters.get(parameterName)
-    return String(param);
-}
 
 
-function displayProductImage(productId){
-    
+function recommendedProducts(){
 
-    var elem = document.getElementById("selected-product-image-top");
-    var elem2 = document.getElementById("selected-product-image-bottom");
-    var elem3 = document.getElementById("selected-product-desc");
-
-    for(i=8; i<12; i++){
-        var el = document.createElement("div")
-        el.className = "selected-product-bottom-images"
-        el.style.backgroundImage = `url(${products[i].image})`;
-        elem2.appendChild(el);
-    }
-
-
-    for(i=0; i<products.length; i++){
-        if(productId === products[i].id){
-
-            elem.style.backgroundImage = `url(${products[i].image})`;
-
-            elem3.innerHTML = `
-                                <div id="breadcrumb-display-section">
-                                    <a href="index.html">Home</a> >
-                                    <a href="shop.html?category=all">Shop</a> >
-                                    <a href="productDisplay.html">${products[i].name}</a>
-                                </div>
-                                <br>
-                                <br>
-                                <div id="selectedProduct-title">
-                                    <h1>${products[i].name}</h1>
-                                    <h5>${products[i].price}</h5>
-                                </div>
-                                <hr>
-                                <br>
-                                <div id="selectedProduct-description">
-                                    <p>${products[i].description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, aperiam. Laboriosam delectus dolorem perferendis quaerat, pariatur blanditiis accusamus eius tempore cupiditate velit nihil aut, nesciunt illo repellat reiciendis, porro expedita.</p>
-                                </div>
-                                <br>
-                                <div id="selectedProduct-addToCart">
-                                    Quantity:
-                                    <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" >
-                                    <input type="submit" value="Add To Cart" id="addToCartQuantityButton" onClick="addToCartMessage()">
-                                </div>
-                                <br>
-                                <br>
-                                <div id="selectedProduct-addToWishlist">
-                                    <img src="images/icons/heart-1.png" alt="wishlist" srcset="">
-                                    <p>Add To Wishlist</p>
-                                </div>
-                                <br>
-                                <div id="open-cart" style="display:none">
-                                    <p>${products[i].name} has been added to cart. <a>Open Cart.</a></p>
-                                </div>
-                                <br>
-                                <hr>
-                                <div id="selectedProducts-extras">
-                                    <p>Tags: ${products[i].tags}</p>
-                                    <p>Extra: Some extra description here.</p>
-                                    <p>Another: Another description.</p>
-                                </div>
-                                <br>
-                                <div id="askExpertSection"> 
-                                    <h6>Have a query about ${products[i].name}?</h6>No Worries! you can <a>ask a help</a> from our experts.</br>
-                                </div>
-                            `
-        }
-    }
-
-
-}
-
-
-function addToCartMessage(){
-    document.getElementById("open-cart").style.display = "block";
-}
-
-
-
-var form = document.getElementById("review-form");
-function handleForm(event) { 
-    event.preventDefault(); 
-} 
-form.addEventListener('submit', handleForm);
-
-function submitReview(){
-    alert("The your reiew has been submitted succcessfully!");
-    location.reload()
-}
-
-
-function similarProducts(){
-
-    var elem = document.getElementById("similar-contents");
+    var elem = document.getElementById("recommended-contents");
 
     for(i=24; i<29; i++){
 
         
 
         var card = document.createElement('div');
-        card.className = "similar-cardDescription"
+        card.className = "recommended-cardDescription"
         
         var cardesc = document.createElement('div')
-        cardesc.className = "similar-cardDescription"
+        cardesc.className = "recommended-cardDescription"
 
         card.innerHTML =  `
 
-                    <img  style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='similar-image'src="${products[i].image}" alt="casting-couch">
+                    <img style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='recommended-image'src="${products[i].image}" alt="casting-couch">
                     <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
@@ -161,7 +64,7 @@ function similarProducts(){
 
         cardesc.innerHTML = `
                                 <div class="special-image-desc">
-                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor:pointer">${products[i].name}</h5>
+                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor: pointer" >${products[i].name}</h5>
                                         <p>${products[i].price}</p>
                                         <p class="quick-shop-button">Quick Buy</p>
                                 </div>
@@ -174,16 +77,4 @@ function similarProducts(){
 
 }
 
-
-
-
-
-
-
-
-
-const id = getParameter('id')
-
-
-displayProductImage(parseInt(id))
-similarProducts()
+recommendedProducts()
