@@ -27,6 +27,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
+#title a{
+    text-decoration: none;
+    color: #424141;
+}
+
 #nav{
     margin: 1%;
     padding: 1%;
