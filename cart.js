@@ -205,3 +205,11 @@ function toggleShippingOptions() {
       }
     }
   }
+
+
+
+
+var head = document.getElementById("header")
+if(window.pageYOffset > 500){
+    head.style.boxShadow = "2px 2px 4px 4px rgba(68, 68, 68, 0.657)"
+}
