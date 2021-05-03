@@ -72,14 +72,16 @@ section{
 
 
 
-#header-features{
+
+
+#header-features-2{
     margin: 1%;
     width: 30%;
     padding: 1%;
 }
 
 
-#header-features ul a{
+#header-features-2 ul a{
     margin: 1% 0%;
     float: right;
     align-items: center;
@@ -89,17 +91,17 @@ section{
     transition-duration: .2s;
 }
 
-#header-features ul img a{ 
+#header-features-2 ul img a{ 
     margin: 1% 6%;
 }
 
-#header-features ul a:hover{ 
+#header-features-2 ul a:hover{ 
     transform: scale(.8);
 }
 
 
 
-#header-features ul .number{
+#header-features-2 ul .number{
     background-color: #db3737;
     border-radius: 50%;
     color: #fff;
@@ -144,38 +146,40 @@ section{
         margin: 0% 0% 4% 0%;
     }
 
-    #header-features ul a{
-        margin: 1% 0%;
+    #header-features-2{
+        margin: 1%;
+        width: 50%;
+        padding: 1%;
+    }
+    
+    
+    #header-features-2 ul a{
+        margin: 1% -2%;
         float: right;
         align-items: center;
         transform: scale(.6);
         color: #424141;
         display: flex;
         transition-duration: .2s;
+        opacity: .8;
     }
     
-    #header-features ul img a{ 
-        margin: 1% 6%;
+    #header-features-2 ul img a{ 
+        margin: 1%;
     }
     
-    #header-features ul a:hover{ 
+    #header-features-2 ul a:hover{ 
         transform: scale(.8);
     }
-     
-    #header-features ul .number{
-        background-color: #db3737;
-        border-radius: 50%;
-        color: #fff;
-        text-align: center;
-        transform: translate(-8%, -1%);
-    }
+    
+    
+    
 
-    /* the icons are not displayed */
-    #header-features{
-        display: none;
-    }
 
     .topnav{
+        display: none;
+    }
+    .topnav-2{
         display: none;
     }
 
@@ -187,6 +191,10 @@ section{
         position: absolute;
         right: -2%;
         top: 50px;
+    }
+
+    .responsive-2{
+        display: block;
     }
 
     .topnav.responsive li{

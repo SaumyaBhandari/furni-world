@@ -219,9 +219,12 @@ if(window.pageYOffset > 500){
 // Function to show the hamburger nav bar when the max width is 600px
 function showNavBars() {
     var x = document.getElementById("nav");
-    if (x.className === "topnav") {
+    var y = document.getElementById("header-features-2");
+    if (x.className === "topnav" && y.className === "topnav-2") {
       x.className += " responsive";
+      y.className += " responsive-2";
     } else {
       x.className = "topnav";
+      y.className = "topnav-2";
     }
 }

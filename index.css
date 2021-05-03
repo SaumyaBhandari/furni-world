@@ -74,23 +74,25 @@
     #landing-slider{
         width: 100%;
         transform: scale(.7);
+        margin: 30% 0% 0% 0%;
     }
-    
-
     
     .landing-text{
-        padding: 0% 0% 0% 0%;
-        display: inline-block;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
     }
+
     .landing-text .landing-text-title{
-        padding: 2%;
-        text-align: left;
-        transform: scale(1);
+        text-align: center;
+        transform: scale(1.5);
+        margin: -320% 0% 0% 0%;
     }
     
     
     #shop-now-button{
         transform: scale(.7);
+        margin: 230% 0% 0% 0%;
     }
     
 
@@ -625,19 +627,34 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .special-left-wrapper{
+        margin: 2%;
+    }
+    .special-left-wrapper .add-to-cart-overlay{
+        margin: -2% 0% 0% 0%;
+    }
     #special-left{
         flex-basis: 100%;
+        width: 100%;
     }
+
     
     #special-right{
+        width: 100%;
+        align-items: center;
         flex-basis: 100%;
     }
+
+    .special-right-cardDescription{
+        margin-left: 4%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
 
     #special-right .special-right-cardDescription{
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
 
 }
@@ -728,7 +745,7 @@
 @media only screen and (max-width: 600px) {
 
     #products-cards-section .cardDescription{
-        flex-basis: 100%;
+        flex-basis: 80%;
     }
 
 }
@@ -872,6 +889,13 @@
         height: 150px;
         width: 220%;
     }
+    #furnitureSetsCards .slick-center .furnitureSets-name{
+        opacity: 1;
+        transform: scale(-.8, .7);
+    }
+    #furnitureSetsCards .slick-center:hover .furnitureSets-click{
+        transform: scale(-.8, .7);
+    }
 
 }
 
@@ -964,7 +988,7 @@
 
     #preferences .imageCover{
         flex-basis: 100%;
-        margin: 4%;
+        margin: 4% 0%;
     }
 
 }
