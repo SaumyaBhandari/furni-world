@@ -383,16 +383,8 @@ function slickSliderFurnitureSets(){
 }
 
 
-// Function to show the hamburger nav bar when the max width is 600px
-function showNavBars() {
-    var x = document.getElementById("navBar");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav"; 
-    }
-}  
- 
+  
+
 
 
 landingSlider()
