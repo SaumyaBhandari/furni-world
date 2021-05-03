@@ -1,8 +1,10 @@
 const featuredProducts = [
     {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/chair.png"},
-    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-1.png"},
-    {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-2.png"},
     {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-3.png"},
+    {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-2.png"},
+    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-1.png"},
+    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/couch.png"},
+    {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$100', image: "images/Landing Section/sofa-4.png"},
 ];
 
 const categories = [

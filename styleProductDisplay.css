@@ -318,6 +318,7 @@
         flex-basis: 100%;
         margin: 4%;
         padding: 8%;
+        border: none;
     }
     
     #review-right{

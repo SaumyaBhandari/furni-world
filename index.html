@@ -24,13 +24,34 @@
 
 
 </head>
-<body>
+
+
+<body onscroll="checkOffSet()">
     
+
+
+    <header id="upper-header-nav">
+
+        <div id="upper-nav-left">
+            <p><i class="fa fa-map-marker"></i> Location &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> support@furniworld.com</p>
+        </div>
+
+
+        <div id="upper-nav-right">
+            <p><i class="fa fa-map-marker"></i> Gift-Card &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> FAQ</p>
+        </div>
+    </header>
     
+
 
     <header id='header'>
 
+
+        
+
         <div id="title"><a href="index.html"><h4>Furni-World</h4></a></div>
+
+        
 
         <div id="nav" class="topnav">
             <nav>
@@ -92,7 +113,7 @@
                 <h1>Elucidate</h1>
                 <h5>Your Style</h5>
             </div>
-            <p id="shop-now-button" onclick="window.location.href = 'shop.html?category=all' ">Shop Now</p>
+            <p id="shop-now-button" onclick="window.location.href = 'shop.html?category=all' ">Shop Now <span class="visuallyhidden">Go to shop section.</span></p>
         </div>
 
     </section>
@@ -124,7 +145,7 @@
         <br>
         <div id="see-all-trending-products" onclick="window.location.href = 'shop.html?category=seating'">
             <p>
-                + View More
+                + View More <span class="visuallyhidden">Go to shop section to see trending products.</span>
             </p>
         </div>
        
@@ -147,7 +168,7 @@
             <h1>Furni-World Collections</h1>
             <p>Save upto 35% off on the collections.</p>
             <div id="seeAllCollections" onclick="window.location.href = 'shop.html?category=all'"> 
-                <p>+ See All Collections </p> 
+                <p>+ See All Collections <span class="visuallyhidden">Go to shop section: categorized by the collection name</span></p> 
             </div>
         </div>
         <br>
@@ -158,7 +179,7 @@
                     <div class="imageOverlay">
                         <p>From the designers of minimax studios.</p>
                         <h1>Comfort Lounging</h1>
-                        <h6 onclick="window.location.href = 'shop.html?category=sofas'">Explore Collection</h6>
+                        <h6 onclick="window.location.href = 'shop.html?category=sofas'">Explore Collection </h6>
                     </div>
                 </div>
             </div>
@@ -210,7 +231,7 @@
             <p>Newest Creations from top brand studios across the world.</p>
              <div id="open-shop-button-new-products" onclick="window.location.href = 'shop.html?category=all'">
             <p>
-                Open Shop
+                Open Shop <span class="visuallyhidden">Go to shop section to see the new products.</span>
             </p>
             </div>
         </div>
@@ -265,7 +286,7 @@
         <div id="special-section-title">
             <h1>Monthly Specials</h1>
             <p id="open-shop-special" onclick="window.location.href = 'shop.html?category=bathroom'">
-                + View all Specials
+                + View all Specials <span class="visuallyhidden">Go to shop section to view our special products</span>
             </p>
             <!-- <p>Furni-World Special for the year 2021. Based upon the most purchased product of 2020.</p> -->
         </div>
@@ -320,7 +341,7 @@
             <h1>Regular Preferences</h1>
             <p>Common Preferences of our regular users. Customize your own now!</p>
             <div id="preference-open-button">
-                <p>+ Customize my preference</p>
+                <p>+ Customize my preference <span class="visuallyhidden">Click to customize your own preference of the furnitures from our products.</span></p>
             </div>
         </div>
         <br>

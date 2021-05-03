@@ -251,7 +251,6 @@ if(category === 'all'){
 categoriesSelector(category)
 shop(1, category, start, end)
 recommendedProducts()
-reviewSlider()
 
 
 

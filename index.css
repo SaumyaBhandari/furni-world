@@ -25,6 +25,9 @@
     color: #2e2e2e;
 }
 
+#landing-slider .slick-arrow::before, #landing-slider .slick-arrow::before{
+    color: #424141;
+}
 
 .oval{
     background-color: bisque;
@@ -73,29 +76,60 @@
     
     #landing-slider{
         width: 100%;
-        transform: scale(.7);
+        transform: scale(.7, .64);
         margin: 30% 0% 0% 0%;
     }
     
     .landing-text{
-        width: 70%;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
 
     .landing-text .landing-text-title{
         text-align: center;
-        transform: scale(1.5);
-        margin: -320% 0% 0% 0%;
+        transform: scale(1);
+        margin: -210% 0% 0% -46%;
     }
     
     
     #shop-now-button{
-        transform: scale(.7);
-        margin: 230% 0% 0% 0%;
+        transform: scale(.6);
+        margin: 130% 0% 0% -46%;
+    }
+
+    #categoryCards{
+        transform: scale(.8);
+    }
+    #categoryCards img{
+        margin-left: -36%;
+    }
+
+    #furnitureSetsCards{
+        transform: scale(.8);
+    }
+
+    #special-right{
+        margin: 16% 0%;
+    }
+
+    .special-right-cardDescription{
+        transform: translate(14%, 0%);
+        margin: 2% 0%;
     }
     
+    .special-image-desc{
+        transform: translate(-8%, 0%);
+    }
+    
+    #collectionsSection{
+        width: 100%;
+    }
 
+    #preferences .imageCover{
+        flex-basis: 90%;
+    }
+ 
 }
 
 
