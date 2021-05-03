@@ -234,7 +234,7 @@ input:focus {
       flex-basis: 100%;
     }
     .item {
-      height: 750px;
+      height: 800px;
       flex-wrap: wrap;
       justify-content: center;
       padding: 5%;

@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
@@ -87,7 +87,74 @@
 
 
 
+    <div id="accessibility">
 
+         <img src="images/icons//access-icon.png" alt="" srcset="" id="accessibility-icon">
+
+
+
+         <form class="accessibility-overlay" id="overlay-accessibility">
+            <div id="accessibility-title" class="accessibility-options"><h4>Accessibility Options</h4></div>
+            <br>
+            <br>
+            <label  class="accessibility-options">
+                <div id="color-invert" >
+                    <label for="invertcolor"> <h6>Invert Color</h6></label>
+                    <input type="range" id="invert-color" name="invertcolor" min="0" max="100" value="0">
+                    <label for="invertcolor"  id="slider-value-place-invert">0%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <i class="material-icons" id="refresh-invert">refresh</i>
+                </div>
+
+            </label>   
+
+            <label  class="accessibility-options">
+                <div id="grayscale" >
+                    <label for="grayscalemode"> <h6>Greyscale Level</h6></label>
+                    <input type="range" id="grayscale-mode" name="grayscalemode" min="0" max="100" value="0">
+                    <label for="grayscalemode"  id="slider-value-place-grayscale">0%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <i class="material-icons" id="refresh-greyscale">refresh</i>
+                </div>
+            </label>   
+
+            <label  class="accessibility-options">
+                <div id="brightness" >
+                    <label for="brightness"> <h6>Brightness Level</h6></label>
+                    <input type="range" id="brightness-level" name="brightness" min="50" max="150" value="100">
+                    <label for="brightness"  id="slider-value-place-brightness">100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <i class="material-icons" id="refresh-brightness">refresh</i>
+                </div>
+            </label>   
+
+            <label  class="accessibility-options">
+                <div id="font-size" >
+                    <label for="font"> <h6>Font Level</h6></label>
+                    <input type="range" id="font-level" name="font" min="50" max="150" value="100">
+                    <label for="font"  id="slider-value-place-font">100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <i class="material-icons" id="refresh-font">refresh</i>
+                </div>
+            </label>   
+
+
+            <label  class="accessibility-options">
+                <div  id="translate" >
+                    <div id="google_translate_element"></div>
+                </div>
+            </label>   
+
+            <br>
+            <br>
+            <label  class="accessibility-options">
+                <div id="reset">
+                    <label> <i class="fa fa-refresh"></i></label>
+                    <h5>&nbsp;&nbsp;&nbsp;Reset All</h5>
+                </div>
+            </label>   
+
+            
+
+         </form>
+
+    </div>
 
 
 
@@ -453,7 +520,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 

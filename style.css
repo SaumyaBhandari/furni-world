@@ -254,11 +254,55 @@ section{
 
 
  
+.goog-logo-link{
+    height: 20px;
+    width: 50px;
+}
+
+#accessibility{
+    position: sticky;
+    height: 0px;
+    top: 90%;
+    z-index: 20;
+    display: flex;
+}
+
+#accessibility-icon{
+    background-color: #fff;
+    border-radius:50%;
+    height: 80px;
+    width: 80px;
+}
+
+.accessibility-overlay{
+    height: 600px;
+    width: 400px;
+    background-color: #eeeeeedf;
+    position: relative;
+    margin: -27% 0% 0% .2%;
+    display: none;
+}
 
 
+.accessibility-options{
+    width: 100%;
+    padding: 2%;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
 
 
+#reset{
+    display: flex;
+    text-align: center;
+}
 
+.acc{
+    display: block;
+}
 
 
 
