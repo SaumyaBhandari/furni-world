@@ -197,7 +197,7 @@ function miniShop(){
                             <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
-                                    <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
+                                    <li><img  onclick="addToCart(${allProducts[i].id})" class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
                                     <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
                                 </ul>
                             </div>
@@ -286,7 +286,7 @@ function specialProducts(){
                     <div class="add-to-cart-overlay">
                                 <ul>
                                     <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
-                                    <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
+                                    <li><img onclick="addToCart(${allProducts[i].id})"  class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
                                     <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
                                 </ul>
                             </div>`

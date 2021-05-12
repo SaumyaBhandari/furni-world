@@ -277,10 +277,12 @@ section{
 }
 
 .accessibility-overlay{
-    height: 600px;
+    height: 510px;
     width: 400px;
+    left: 5%;
+    bottom: 1px;
     background-color: #eeeeeedf;
-    position: relative;
+    position: absolute;
     margin: -27% 0% 0% .2%;
     display: none;
 }
@@ -334,6 +336,7 @@ section{
     width: 1px;
     white-space: nowrap;
 }
+
 
 #footer-section{
     background-color: #222222;

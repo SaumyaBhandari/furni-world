@@ -1,43 +1,11 @@
 const product = [
-    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-1.jpg"       , tags: "all, sofa, singleseater, seating"         },
-    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-2.jpg"       , tags: "all, sofa, singleseater, seating"         },
-    {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-4.jpg"       , tags: "all, table, wood"         },
-    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-5.png"       , tags: "all, sofa, doubleseater"         },
-    {id: 10, name: 'Furniture 10', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-10.png"    , tags: "all, chair, seating, singleseater"         },
-    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-13.png"    , tags: "all, sofa, seating, doubleseater"         },
-    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-14.png"    , tags: "all, sofa, doubleseater, seating"         },
-    {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-15.png"    , tags: "all, sofa, doubleseater, seating"         },
-    {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-16.jpg"    , tags: "all, stool, seating, singleseater"         },
-    {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-12.jpg"    , tags: "all, couch, seating, singleseater"         },
-    {id: 11, name: 'Furniture 11', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-11.jpg"    , tags: "all, self, wood"         },
-    {id: 9, name: 'Furniture 9', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-9.jpg"       , tags: "all, tub, bathroom, bath"         },
-    {id: 8, name: 'Furniture 8', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-8.jpg"       , tags: "all, lighting"         },
-    {id: 7, name: 'Furniture 7', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-7.jpg"       , tags: "all, lighting"         },
-    {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-3.jpg"       , tags: "all, bed, bedroom, bedding"         },
-    {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-6.jpg"       , tags: "all, table, round, wood"         },
-    {id: 17, name: 'Furniture 17', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/all-product/product-17.jpg"    , tags: "all, table, wood, legs"         },
-    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/couch.jpg"             , tags: "all, seating, doubleseater, sofa, couch" },
-    {id: 19, name: 'Furniture 19', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/forma.jpg"             , tags: "all, aesthetic, holder" },
-    {id: 20, name: 'Furniture 20', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/holder.jpg"            , tags: "all, holder, lighting, aesthetic" },
-    {id: 21, name: 'Furniture 21', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/light 4.jpg"           , tags: "all, seating, wood"     },
-    {id: 22, name: 'Furniture 22', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/light1.jpg"            , tags: "all, lighting" },
-    {id: 23, name: 'Furniture 23', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/light2.jpg"            , tags: "all, lighting, aesthetic" },
-    {id: 24, name: 'Furniture 24', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/light3.jpg"            , tags: "all, lighting" },
-    {id: 25, name: 'Furniture 25', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/light12.jpg"           , tags: "all, lighting"     },
-    {id: 26, name: 'Furniture 26', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/mirror.jpg"            , tags: "all, decor, lighting, mirror, aesthetic" },
-    {id: 27, name: 'Furniture 27', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/pot.jpg"               , tags: "all, holder, decor, aesthetic" },
-    {id: 28, name: 'Furniture 28', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/pot2.jpg"              , tags: "all, holder, decor, aesthetic" },
-    {id: 29, name: 'Furniture 29', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/stool.jpg"             , tags: "all, seating, stool, singleseater" },
-    {id: 30, name: 'Furniture 30', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/stool2.jpg"            , tags: "all, seating, stool, singleseater, aesthetic" },
-    {id: 31, name: 'Furniture 31', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/stool3.jpg"            , tags: "all, seating, stool, singleseater" },
-    {id: 32, name: 'Furniture 32', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/stool4.jpg"            , tags: "all, seating, stool, singleseater" },
-    {id: 33, name: 'Furniture 33', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/table.jpg"             , tags: "all, table" },
-    {id: 34, name: 'Furniture 34', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '$260', image: "images/product/table2.jpg"            , tags: "all, table" },
-];
-
-
-
-let cart = [
+    {id: 1, name: 'Furniture 1', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-1.jpg"       , tags: "all, sofa, singleseater, seating"         },
+    {id: 2, name: 'Furniture 2', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-2.jpg"       , tags: "all, sofa, singleseater, seating"         },
+    {id: 4, name: 'Furniture 4', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-4.jpg"       , tags: "all, table, wood"         },
+    {id: 5, name: 'Furniture 5', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-5.png"       , tags: "all, sofa, doubleseater"         },
+    {id: 10, name: 'Furniture 10', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-10.png"    , tags: "all, chair, seating, singleseater"         },
+    {id: 13, name: 'Furniture 13', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-13.png"    , tags: "all, sofa, seating, doubleseater"         },
+    {id: 14, name: 'Furniture 14', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-14.png"    , tags: "all, sofa, doubleseater, seating"         },
     {id: 15, name: 'Furniture 15', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-15.png"    , tags: "all, sofa, doubleseater, seating"         },
     {id: 16, name: 'Furniture 16', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-16.jpg"    , tags: "all, stool, seating, singleseater"         },
     {id: 12, name: 'Furniture 12', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-12.jpg"    , tags: "all, couch, seating, singleseater"         },
@@ -47,21 +15,43 @@ let cart = [
     {id: 7, name: 'Furniture 7', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-7.jpg"       , tags: "all, lighting"         },
     {id: 3, name: 'Furniture 3', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-3.jpg"       , tags: "all, bed, bedroom, bedding"         },
     {id: 6, name: 'Furniture 6', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-6.jpg"       , tags: "all, table, round, wood"         },
-
+    {id: 17, name: 'Furniture 17', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/all-product/product-17.jpg"    , tags: "all, table, wood, legs"         },
+    {id: 18, name: 'Furniture 18', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/couch.jpg"             , tags: "all, seating, doubleseater, sofa, couch" },
+    {id: 19, name: 'Furniture 19', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/forma.jpg"             , tags: "all, aesthetic, holder" },
+    {id: 20, name: 'Furniture 20', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/holder.jpg"            , tags: "all, holder, lighting, aesthetic" },
+    {id: 21, name: 'Furniture 21', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/light 4.jpg"           , tags: "all, seating, wood"     },
+    {id: 22, name: 'Furniture 22', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/light1.jpg"            , tags: "all, lighting" },
+    {id: 23, name: 'Furniture 23', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/light2.jpg"            , tags: "all, lighting, aesthetic" },
+    {id: 24, name: 'Furniture 24', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/light3.jpg"            , tags: "all, lighting" },
+    {id: 25, name: 'Furniture 25', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/light12.jpg"           , tags: "all, lighting"     },
+    {id: 26, name: 'Furniture 26', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/mirror.jpg"            , tags: "all, decor, lighting, mirror, aesthetic" },
+    {id: 27, name: 'Furniture 27', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/pot.jpg"               , tags: "all, holder, decor, aesthetic" },
+    {id: 28, name: 'Furniture 28', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/pot2.jpg"              , tags: "all, holder, decor, aesthetic" },
+    {id: 29, name: 'Furniture 29', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/stool.jpg"             , tags: "all, seating, stool, singleseater" },
+    {id: 30, name: 'Furniture 30', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/stool2.jpg"            , tags: "all, seating, stool, singleseater, aesthetic" },
+    {id: 31, name: 'Furniture 31', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/stool3.jpg"            , tags: "all, seating, stool, singleseater" },
+    {id: 32, name: 'Furniture 32', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/stool4.jpg"            , tags: "all, seating, stool, singleseater" },
+    {id: 33, name: 'Furniture 33', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/table.jpg"             , tags: "all, table" },
+    {id: 34, name: 'Furniture 34', description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.', price: '260', image: "images/product/table2.jpg"            , tags: "all, table" },
 ];
+
+
+if(localStorage.getItem('textValues') == null){
+    var cart =[];
+}else{
+    cart =  JSON.parse(localStorage.getItem('textValues'));
+}
 
 function addToCart(prod){
     for(i=0; i<product.length; i++){
         if(product[i].id == prod){
             cart.push(product[i])
             alert(`${product[i].name} added to cart.`)
+            localStorage.setItem('textValues', JSON.stringify(cart));
         }
     }
     console.log(cart.length);
 }
-
-
-
 
 function showCartItems(){
 
@@ -89,7 +79,7 @@ function showCartItems(){
                         <h6>Product</h6>
                         <br>
                         <span>${cart[i].name}</span>
-                        <span>${cart[i].price}</span>
+                        <span>$${cart[i].price}</span>
                     </div>
     
                     <div class="quantity">
@@ -107,31 +97,32 @@ function showCartItems(){
                 <div class="total-price">
                     <h6>Price</h6>
                     <br>
-                     ${cart[i].price}
+                    $${cart[i].price}
                 </div>
     
                 <div class="buttons">
                         <h6>Action</h6>
                         <br>
                         <span class="delete-btn">
-                            <p>Remove </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </span>
                         <span class="save-for-later">
-                            <p>Save</p>
+                            <p>Remove</p>
                         </span>
                 </div>
-            
+                
             `;
     
             if(i%2!=0){
                 itm.style.backgroundColor = "#f1f1f1"
             }
-    
+            
             elem.appendChild(itm);
-    
+            
             price += parseInt(cart[i].price);
     
         }
+        elem.innerHTML += `<div class="clearAllButton" onclick = "clearCart()">Clear All</div>`
     }
     
 
@@ -182,6 +173,12 @@ function showCartItems(){
 
 
 
+
+function clearCart(){
+    localStorage.clear();
+    location.reload();
+    window.scrollTo(0, 100);
+}
 
 
 
