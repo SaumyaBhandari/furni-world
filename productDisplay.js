@@ -42,6 +42,8 @@ function getParameter( parameterName ){
     let param = parameters.get(parameterName)
     return String(param);
 }
+const id = getParameter('id')
+displayProductImage(parseInt(id))
 
 
 function displayProductImage(productId){
@@ -182,8 +184,8 @@ function similarProducts(){
 
 
 
-const id = getParameter('id')
 
 
-displayProductImage(parseInt(id))
+
+
 similarProducts()
