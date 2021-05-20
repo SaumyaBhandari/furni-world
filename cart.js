@@ -43,14 +43,16 @@ if(localStorage.getItem('textValues') == null){
 }
 
 function addToCart(prod){
+
+
     for(i=0; i<product.length; i++){
         if(product[i].id == prod){
             cart.push(product[i])
             alert(`${product[i].name} added to cart.`)
+            
             localStorage.setItem('textValues', JSON.stringify(cart));
         }
     }
-    console.log(cart.length);
 }
 
 function showCartItems(){
@@ -229,7 +231,7 @@ function toggleShippingOptions() {
 function checkOffSet(){
     var head = document.getElementById("header")
     if(window.scrollY > 500){
-        head.style.boxShadow = "2px 2px 4px 4px rgba(68, 68, 68, 0.657)";
+        head.style.boxShadow = "2px 2px 2px 2px rgba(68, 68, 68, 0.300)";
         head.style.transitionDuration = ".5s";
     } else{
         head.style.boxShadow = "2px 2px 2px 2px rgba(207, 207, 207, 0.281) ";

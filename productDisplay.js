@@ -46,6 +46,8 @@ const id = getParameter('id')
 displayProductImage(parseInt(id))
 
 
+
+
 function displayProductImage(productId){
     
 
@@ -60,12 +62,12 @@ function displayProductImage(productId){
         elem2.appendChild(el);
     }
 
-
+    
     for(i=0; i<products.length; i++){
         if(productId === products[i].id){
-
-            elem.style.backgroundImage = `url(${products[i].image})`;
-
+            var image = `url(${products[i].image})`
+            elem.style.backgroundImage = image;
+            similar = products[i];
             elem3.innerHTML = `
                                 <div id="breadcrumb-display-section">
                                     <a href="index.html">Home</a> >
@@ -111,10 +113,9 @@ function displayProductImage(productId){
                                     <h6>Have a query about ${products[i].name}?</h6>No Worries! you can <a>ask a help</a> from our experts.</br>
                                 </div>
                             `
+                            
         }
     }
-
-
 }
 
 
@@ -129,20 +130,20 @@ function handleForm(event) {
     event.preventDefault(); 
 } 
 form.addEventListener('submit', handleForm);
-
 function submitReview(){
     alert("The your reiew has been submitted succcessfully!");
     location.reload()
 }
 
 
+
+
 function similarProducts(){
 
     var elem = document.getElementById("similar-contents");
 
-    for(i=24; i<29; i++){
 
-        
+    for(i=24; i<29; i++){
 
         var card = document.createElement('div');
         card.className = "similar-cardDescription"
@@ -150,29 +151,31 @@ function similarProducts(){
         var cardesc = document.createElement('div')
         cardesc.className = "similar-cardDescription"
 
-        card.innerHTML =  `
 
-                    <img  style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='similar-image'src="${products[i].image}" alt="casting-couch">
-                    <div class="add-to-cart-overlay">
-                                <ul>
-                                    <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
-                                    <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
-                                    <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
-                                </ul>
-                            </div>`
+            card.innerHTML =  `
 
-        cardesc.innerHTML = `
-                                <div class="special-image-desc">
-                                        <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor:pointer">${products[i].name}</h5>
-                                        <p>${products[i].price}</p>
-                                        <p class="quick-shop-button">Quick Buy</p>
-                                </div>
-                                `
+                        <img  style="cursor:pointer" onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' " class='similar-image'src="${products[i].image}" >
+                        <div class="add-to-cart-overlay">
+                                    <ul>
+                                        <li><img   class="search-icon" src="images/icons/search.png" alt="" srcset=""></li>
+                                        <li><img   class="cart-icon" src="images/icons/cart.png" alt="" srcset=""></li>
+                                        <li><img   class="heart-icon" src="images/icons/heart-1.png" alt="" srcset=""></li>
+                                    </ul>
+                                </div>`
 
-        card.appendChild(cardesc)
-        elem.appendChild(card);
+            cardesc.innerHTML = `
+                                    <div class="special-image-desc">
+                                            <h5 onclick="window.location.href = 'productDisplay.html?id=${products[i].id}' "  style="cursor:pointer">${products[i].name}</h5>
+                                            <p>${products[i].price}</p>
+                                            <p class="quick-shop-button">Quick Buy</p>
+                                    </div>
+                                    `
+
+            card.appendChild(cardesc)
+            elem.appendChild(card);
 
     }
+
 
 }
 
